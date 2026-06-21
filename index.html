@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>My Portfolio - Windows XP</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Boot Screen -->
+    <div id="boot-screen" class="boot-screen">
+      <div class="boot-logo">
+        <span class="boot-text">Microsoft</span>
+        <h1 class="boot-title">Windows<span class="boot-xp">XP</span></h1>
+      </div>
+      <div class="boot-loader">
+        <div class="boot-bar"></div>
+      </div>
+    </div>
+
+    <!-- Desktop Environment -->
+    <div id="desktop" class="desktop">
+      <!-- Icons will be generated here -->
+      <div class="desktop-icons-container" id="desktop-icons"></div>
+      
+      <!-- Windows will be injected here -->
+      <div id="windows-container"></div>
+    </div>
+
+    <!-- Taskbar -->
+    <div id="taskbar" class="taskbar">
+      <button id="start-button" class="start-button">
+        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHBhdGggZD0iTTAgMGgxNnYxNkgweiIgZmlsbD0iI2ZmZiIgZmlsbC1vcGFjaXR5PSIwIi8+PHBhdGggZD0iTTIgOGw1LTJWNEwyIDh6TTE0IDhsLTUtMlY0bDUgNHpNMjggMTBsNS0ydjRMMiAxeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Start" class="start-icon" />
+        <span class="start-text">start</span>
+      </button>
+      
+      <!-- Open window tabs -->
+      <div id="taskbar-tabs" class="taskbar-tabs"></div>
+
+      <!-- System Tray / Clock -->
+      <div id="system-tray" class="system-tray">
+        <div id="clock" class="clock">12:00 PM</div>
+      </div>
+    </div>
+
+    <!-- Start Menu (Hidden by default) -->
+    <div id="start-menu" class="start-menu hidden">
+      <div class="start-menu-sidebar">
+        <div class="user-profile">
+          <div class="user-avatar"></div>
+          <span class="user-name">Guest</span>
+        </div>
+      </div>
+      <div class="start-menu-body">
+        <ul id="start-menu-items" class="start-menu-list">
+          <!-- Items injected via JS -->
+        </ul>
+      </div>
+      <div class="start-menu-footer">
+        <button class="shutdown-btn" id="shutdown-btn">
+          <span class="shutdown-icon"></span>
+          Shut Down...
+        </button>
+      </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
