@@ -629,22 +629,33 @@ body, html {
 .ie-row {
   display: flex;
   align-items: center;
-  padding: 2px 4px;
+  padding: 2px 2px;
   border-bottom: 1px solid white;
   border-top: 1px solid #d4d0c8;
 }
 .ie-row:first-child {
   border-top: none;
 }
-
-.ie-grabber {
-  width: 4px;
-  height: 18px;
-  border-left: 1px solid white;
-  border-right: 1px solid #aca899;
-  margin-right: 5px;
+.ie-row-inner {
+  display: flex;
+  align-items: center;
+  flex: 1;
 }
 
+.ie-grabber {
+  width: 3px;
+  height: 20px;
+  border-left: 1px solid white;
+  border-right: 1px solid #aca899;
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.ie-menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
 .ie-menu span {
   padding: 2px 6px;
   cursor: pointer;
@@ -654,11 +665,21 @@ body, html {
   color: white;
 }
 
+.ie-logo {
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-left: 1px solid #aca899;
+  border-bottom: 1px solid white;
+  margin-top: -3px;
+  margin-right: -2px;
+}
+
 .ie-btn {
   display: flex;
   align-items: center;
-  gap: 4px;
-  padding: 2px 4px;
+  gap: 2px;
+  padding: 1px 3px;
   border: 1px solid transparent;
   cursor: pointer;
   color: #000;
@@ -668,13 +689,24 @@ body, html {
   background-color: #c1d2ee;
   border-radius: 3px;
 }
+.ie-btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.ie-btn.disabled:hover {
+  border: 1px solid transparent;
+  background-color: transparent;
+}
 .ie-btn-icon {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
+}
+.ie-btn-text {
+  font-size: 11px;
 }
 .ie-btn-sep {
   width: 1px;
-  height: 20px;
+  height: 22px;
   background-color: #aca899;
   border-right: 1px solid white;
   margin: 0 4px;
@@ -687,7 +719,7 @@ body, html {
   gap: 5px;
 }
 .ie-address-label {
-  color: #000;
+  color: #aca899;
   padding: 0 5px;
 }
 .ie-address-input-wrapper {
@@ -695,8 +727,9 @@ body, html {
   display: flex;
   align-items: center;
   background: white;
-  border: 1px solid #7f9db9;
+  border: 1px inset #7f9db9;
   padding: 1px 2px;
+  height: 20px;
 }
 .ie-address-input-wrapper img {
   width: 14px;
@@ -710,11 +743,16 @@ body, html {
   font-family: var(--font-family);
   font-size: 11px;
 }
+.ie-go-container {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+}
 .ie-go-btn {
   display: flex;
   align-items: center;
   gap: 3px;
-  padding: 1px 5px;
+  padding: 1px 4px;
   background-color: var(--xp-window-bg);
   border: 1px solid transparent;
   cursor: pointer;
@@ -725,12 +763,53 @@ body, html {
   border-radius: 3px;
 }
 
+.ie-links {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  color: #000;
+  cursor: pointer;
+  border-left: 1px solid #aca899;
+  box-shadow: -1px 0 0 white;
+  margin-left: 5px;
+}
+.ie-links span {
+  font-weight: normal;
+}
+
 .ie-content-frame {
   flex: 1;
   background: white;
   border-top: 1px solid #aca899;
   overflow-y: auto;
   padding: 15px;
+}
+
+.ie-status-bar {
+  display: flex;
+  align-items: center;
+  background-color: var(--xp-window-bg);
+  height: 22px;
+  padding: 2px;
+  gap: 2px;
+  border-top: 1px solid #d4d0c8;
+}
+.ie-status-pane {
+  height: 100%;
+  border: 1px inset #d4d0c8;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  gap: 4px;
+  font-size: 11px;
+  color: #000;
+}
+.ie-status-main {
+  flex: 1;
+}
+.ie-status-pane img {
+  width: 14px;
+  height: 14px;
 }
 
 .content-section p, .content-section ul, .content-section form {

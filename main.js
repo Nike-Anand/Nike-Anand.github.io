@@ -5,7 +5,7 @@ const iconsData = [
     id: 'about',
     title: 'About Me',
     // My Computer Icon approximation
-    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHJlY3QgeD0iMiIgeT0iNCIgd2lkdGg9IjI4IiBoZWlnaHQ9IjIwIiByeD0iMiIgZmlsbD0iI2U3ZTdlNyIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjEiLz48cmVjdCB4PSI0IiB5PSI2IiB3aWR0aD0iMjQiIGhlaWdodD0iMTYiIGZpbGw9IiMzYThmZjMiLz48cGF0aCBkPSJNMTEgMjVoMTB2MkgxMXoiIGZpbGw9IiNhYWEiLz48cGF0aCBkPSJNNyAyN2gxOHYyaC0xOHoiIGZpbGw9IiM1NTUiLz48L3N2Zz4=',
+    icon: '/react95_icons/computer_explorer_cool-0.png',
     content: `
       <div class="content-section">
         <h1>About Me</h1>
@@ -20,17 +20,17 @@ const iconsData = [
     id: 'projects',
     title: 'My Projects',
     // My Documents Icon approximation (Folder with paper)
-    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTAgNmwxMC0yaDEydjRMMzIgMTB2MTZIMHoiIGZpbGw9IiNmZmQxNjYiLz48cGF0aCBkPSJNMCAxMmgzMnYxNkgweiIgZmlsbD0iI2ZmYWMwMCIvPjxwYXRoIGQ9Ik02IDhoMTh2MTBINnoiIGZpbGw9IiNmZmYiLz48cGF0aCBkPSJNOCAxMmgxNHYySDh6TTEyIDE2aDEwdjJIMTJ6IiBmaWxsPSIjY2NjIi8+PC9zdmc+',
+    icon: '/react95_icons/directory_open_cool-0.png',
     content: `
       <div class="content-section">
         <h1>My Projects</h1>
         <div class="projects-grid">
           <div class="project-card">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTAgNmw4LThoMTB2NEgzMnYyMEgweiIgZmlsbD0iI2ZmZDE2NiIvPjxwYXRoIGQ9Ik0wIDEwaDMyVjI4SDB6IiBmaWxsPSIjZmZhYzAwIi8+PC9zdmc+" alt="Proj 1">
+            <img src="/react95_icons/directory_closed-0.png" alt="Proj 1">
             <p>Project Alpha</p>
           </div>
           <div class="project-card">
-            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTAgNmw4LThoMTB2NEgzMnYyMEgweiIgZmlsbD0iI2ZmZDE2NiIvPjxwYXRoIGQ9Ik0wIDEwaDMyVjI4SDB6IiBmaWxsPSIjZmZhYzAwIi8+PC9zdmc+" alt="Proj 2">
+            <img src="/react95_icons/directory_closed-0.png" alt="Proj 2">
             <p>Project Beta</p>
           </div>
         </div>
@@ -41,38 +41,57 @@ const iconsData = [
     id: 'resume',
     title: 'Resume',
     // Internet Explorer Icon approximation ('e' with ring)
-    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNBN0JEOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE2IDI4YTEyIDEyIDAgMSAxIDAtMjR2NGE4IDggMCAxIDAgMCAxNnoiIGZpbGw9IiMzQTdCRDgiLz48cGF0aCBkPSJNMCAxNmgzMnY0SDB6IiBmaWxsPSIjM0E3QkQ4Ii8+PHBhdGggZD0iTTIgMThjNSAzIDEwIDUgMjAgMmE5IDkgMCAwIDAgNi04di0yYTE2IDE2IDAgMCAxLTI2IDh6IiBmaWxsPSIjZmZkMTY2Ii8+PC9zdmc+',
+    icon: '/react95_icons/gears.png',
     content: `
       <div class="ie-browser">
         <div class="ie-toolbar">
-          <div class="ie-row ie-menu">
-            <div class="ie-grabber"></div>
-            <span>File</span><span>Edit</span><span>View</span><span>Favorites</span><span>Tools</span><span>Help</span>
-          </div>
           <div class="ie-row">
-            <div class="ie-grabber"></div>
-            <div class="ie-btn">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiMzODg2MzYiLz48cGF0aCBkPSJNMTYgOGwtOCAzLjg2TDE2IDE2Vjh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" class="ie-btn-icon">
-              <span>Back</span><span style="font-size:8px; margin-left:2px">▼</span>
-            </div>
-            <div class="ie-btn-sep"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiM5OTkiLz48cGF0aCBkPSJNOCA4bDggMy44Nkw4IDE2Vjh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTggOEwxNiAxNk0xNiA4TDE2IDE2IiBzdHJva2U9IiNlMDQzMzIiIHN0cm9rZS13aWR0aD0iMyIvPjwvc3ZnPg==" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJhMTAgMTAgMCAxIDEgMCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2E3YmQ4IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTIgMmwtNCA0aDhaIiBmaWxsPSIjM2E3YmQ4Ii8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDRMNCAxNGgzdjhIMTBWMThoNFYyMmgzdjhoM0wxMiA0eiIgZmlsbD0iI2ZmZDE2NiIgc3Ryb2tlPSIjMzMzIi8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn-sep"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzE2YWM1IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTQgMTRMMjAgMjAiIHN0cm9rZT0iIzMxNmFjNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+" class="ie-btn-icon"><span>Search</span></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJsMyA3aDhMMTcgMTRsMiA4LTYtNS02IDUtMi04LTUtNSBoOHoiIGZpbGw9IiNmZmFjMDAiIHN0cm9rZT0iIzMzMyIvPjwvc3ZnPg==" class="ie-btn-icon"><span>Favorites</span></div>
-          </div>
-          <div class="ie-row">
-            <div class="ie-grabber"></div>
-            <div class="ie-address-container">
-              <span class="ie-address-label">Address</span>
-              <div class="ie-address-input-wrapper">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNBN0JEOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE2IDI4YTEyIDEyIDAgMSAxIDAtMjR2NGE4IDggMCAxIDAgMCAxNnoiIGZpbGw9IiMzQTdCRDgiLz48cGF0aCBkPSJNMCAxNmgzMnY0SDB6IiBmaWxsPSIjM0E3QkQ4Ii8+PHBhdGggZD0iTTIgMThjNSAzIDEwIDUgMjAgMmE5IDkgMCAwIDAgNi04di0yYTE2IDE2IDAgMCAxLTI2IDh6IiBmaWxsPSIjZmZkMTY2Ii8+PC9zdmc+">
-                <input type="text" value="https://portfolio.local/resume.pdf" readonly>
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-menu">
+                <span>File</span><span>Edit</span><span>View</span><span>Favorites</span><span>Tools</span><span>Help</span>
               </div>
-              <button class="ie-go-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgOGg4TTggNGw0IDQtNCA0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzODg2MzYiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" style="width:14px;height:14px;">Go</button>
+            </div>
+            <img src="/react95_icons/msie1.png" class="ie-logo">
+          </div>
+          <div class="ie-row">
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-btn">
+                <img src="/react95_icons/back.png" class="ie-btn-icon">
+                <span class="ie-btn-text">Back</span><span style="font-size:8px; margin-left:2px">▼</span>
+              </div>
+              <div class="ie-btn disabled">
+                <img src="/react95_icons/forward.png" class="ie-btn-icon">
+                <span style="font-size:8px; margin-left:2px">▼</span>
+              </div>
+              <div class="ie-btn"><img src="/react95_icons/stop.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/refresh.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/home.png" class="ie-btn-icon"></div>
+              <div class="ie-btn-sep"></div>
+              <div class="ie-btn"><img src="/react95_icons/search_web.png" class="ie-btn-icon"><span class="ie-btn-text">Search</span></div>
+              <div class="ie-btn"><img src="/react95_icons/favorites.png" class="ie-btn-icon"><span class="ie-btn-text">Favorites</span></div>
+              <div class="ie-btn"><img src="/react95_icons/history.png" class="ie-btn-icon"></div>
+              <div class="ie-btn-sep"></div>
+              <div class="ie-btn"><img src="/react95_icons/envelope_closed.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/printer.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/notepad.png" class="ie-btn-icon"></div>
+            </div>
+          </div>
+          <div class="ie-row">
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-address-container">
+                <span class="ie-address-label">Address</span>
+                <div class="ie-address-input-wrapper">
+                  <img src="/react95_icons/msie2.png">
+                  <input type="text" value="https://portfolio.local/resume.pdf" readonly>
+                </div>
+                <div class="ie-go-container">
+                  <button class="ie-go-btn"><img src="/react95_icons/arrow_right-1.png" style="width:12px;height:12px;">Go</button>
+                  <div class="ie-links">Links <span style="font-size:10px;margin-left:2px">»</span></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -89,6 +108,17 @@ const iconsData = [
           </ul>
           <button onclick="alert('Download started!')">Download PDF</button>
         </div>
+        <div class="ie-status-bar">
+          <div class="ie-status-pane ie-status-main">
+            <img src="/react95_icons/msie2.png">
+            <span>Done</span>
+          </div>
+          <div class="ie-status-pane" style="width: 150px"></div>
+          <div class="ie-status-pane" style="width: 150px">
+            <img src="/react95_icons/gears.png">
+            <span>Internet</span>
+          </div>
+        </div>
       </div>
     `
   },
@@ -96,38 +126,57 @@ const iconsData = [
     id: 'contact',
     title: 'Contact Me',
     // My Network Places Icon approximation
-    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTE2IDJMMiAxMmgyOHptLTEwIDEydjEySDZWMTR6TTEyIDE0aDh2MTJoLTh6TTIwIDE0aDR2MTJoLTR6IiBmaWxsPSIjM0E3QkQ4Ii8+PC9zdmc+',
+    icon: '/react95_icons/network_cool_two_pcs-0.png',
     content: `
       <div class="ie-browser">
         <div class="ie-toolbar">
-          <div class="ie-row ie-menu">
-            <div class="ie-grabber"></div>
-            <span>File</span><span>Edit</span><span>View</span><span>Favorites</span><span>Tools</span><span>Help</span>
-          </div>
           <div class="ie-row">
-            <div class="ie-grabber"></div>
-            <div class="ie-btn">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiMzODg2MzYiLz48cGF0aCBkPSJNMTYgOGwtOCAzLjg2TDE2IDE2Vjh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" class="ie-btn-icon">
-              <span>Back</span><span style="font-size:8px; margin-left:2px">▼</span>
-            </div>
-            <div class="ie-btn-sep"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTEiIGZpbGw9IiM5OTkiLz48cGF0aCBkPSJNOCA4bDggMy44Nkw4IDE2Vjh6IiBmaWxsPSIjZmZmIi8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTggOEwxNiAxNk0xNiA4TDE2IDE2IiBzdHJva2U9IiNlMDQzMzIiIHN0cm9rZS13aWR0aD0iMyIvPjwvc3ZnPg==" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJhMTAgMTAgMCAxIDEgMCAyMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2E3YmQ4IiBzdHJva2Utd2lkdGg9IjIiLz48cGF0aCBkPSJNMTIgMmwtNCA0aDhaIiBmaWxsPSIjM2E3YmQ4Ii8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDRMNCAxNGgzdjhIMTBWMThoNFYyMmgzdjhoM0wxMiA0eiIgZmlsbD0iI2ZmZDE2NiIgc3Ryb2tlPSIjMzMzIi8+PC9zdmc+" class="ie-btn-icon"></div>
-            <div class="ie-btn-sep"></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTAiIGN5PSIxMCIgcj0iNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzE2YWM1IiBzdHJva2Utd2lkdGg9IjMyLz48cGF0aCBkPSJNMTQgMTRMMjAgMjAiIHN0cm9rZT0iIzMxNmFjNSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9zdmc+" class="ie-btn-icon"><span>Search</span></div>
-            <div class="ie-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJsMyA3aDhMMTcgMTRsMiA4LTYtNS02IDUtMi04LTUtNSBoOHoiIGZpbGw9IiNmZmFjMDAiIHN0cm9rZT0iIzMzMyIvPjwvc3ZnPg==" class="ie-btn-icon"><span>Favorites</span></div>
-          </div>
-          <div class="ie-row">
-            <div class="ie-grabber"></div>
-            <div class="ie-address-container">
-              <span class="ie-address-label">Address</span>
-              <div class="ie-address-input-wrapper">
-                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGNpcmNsZSBjeD0iMTYiIGN5PSIxNiIgcj0iMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNBN0JEOCIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBhdGggZD0iTTE2IDI4YTEyIDEyIDAgMSAxIDAtMjR2NGE4IDggMCAxIDAgMCAxNnoiIGZpbGw9IiMzQTdCRDgiLz48cGF0aCBkPSJNMCAxNmgzMnY0SDB6IiBmaWxsPSIjM0E3QkQ4Ii8+PHBhdGggZD0iTTIgMThjNSAzIDEwIDUgMjAgMmE5IDkgMCAwIDAgNi04di0yYTE2IDE2IDAgMCAxLTI2IDh6IiBmaWxsPSIjZmZkMTY2Ii8+PC9zdmc+">
-                <input type="text" value="https://portfolio.local/contact-me" readonly>
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-menu">
+                <span>File</span><span>Edit</span><span>View</span><span>Favorites</span><span>Tools</span><span>Help</span>
               </div>
-              <button class="ie-go-btn"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgOGg4TTggNGw0IDQtNCA0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzODg2MzYiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" style="width:14px;height:14px;">Go</button>
+            </div>
+            <img src="/react95_icons/msie1.png" class="ie-logo">
+          </div>
+          <div class="ie-row">
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-btn">
+                <img src="/react95_icons/back.png" class="ie-btn-icon">
+                <span class="ie-btn-text">Back</span><span style="font-size:8px; margin-left:2px">▼</span>
+              </div>
+              <div class="ie-btn disabled">
+                <img src="/react95_icons/forward.png" class="ie-btn-icon" style="filter: grayscale(100%) opacity(50%);">
+                <span style="font-size:8px; margin-left:2px">▼</span>
+              </div>
+              <div class="ie-btn"><img src="/react95_icons/stop.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/refresh.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/home.png" class="ie-btn-icon"></div>
+              <div class="ie-btn-sep"></div>
+              <div class="ie-btn"><img src="/react95_icons/search_web.png" class="ie-btn-icon"><span class="ie-btn-text">Search</span></div>
+              <div class="ie-btn"><img src="/react95_icons/favorites.png" class="ie-btn-icon"><span class="ie-btn-text">Favorites</span></div>
+              <div class="ie-btn"><img src="/react95_icons/history.png" class="ie-btn-icon"></div>
+              <div class="ie-btn-sep"></div>
+              <div class="ie-btn"><img src="/react95_icons/envelope_closed.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/printer.png" class="ie-btn-icon"></div>
+              <div class="ie-btn"><img src="/react95_icons/notepad.png" class="ie-btn-icon"></div>
+            </div>
+          </div>
+          <div class="ie-row">
+            <div class="ie-row-inner">
+              <div class="ie-grabber"></div>
+              <div class="ie-address-container">
+                <span class="ie-address-label">Address</span>
+                <div class="ie-address-input-wrapper">
+                  <img src="/react95_icons/msie2.png">
+                  <input type="text" value="https://portfolio.local/contact-me" readonly>
+                </div>
+                <div class="ie-go-container">
+                  <button class="ie-go-btn"><img src="/react95_icons/arrow_right-1.png" style="width:12px;height:12px;">Go</button>
+                  <div class="ie-links">Links <span style="font-size:10px;margin-left:2px">»</span></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -143,6 +192,17 @@ const iconsData = [
             <button type="submit">Send Message</button>
           </form>
         </div>
+        <div class="ie-status-bar">
+          <div class="ie-status-pane ie-status-main">
+            <img src="/react95_icons/gears.png">
+            <span>Done</span>
+          </div>
+          <div class="ie-status-pane" style="width: 150px"></div>
+          <div class="ie-status-pane" style="width: 150px">
+            <img src="/react95_icons/gears.png">
+            <span>Internet</span>
+          </div>
+        </div>
       </div>
     `
   },
@@ -150,7 +210,7 @@ const iconsData = [
     id: 'skills',
     title: 'Skills',
     // Control Panel Icon approximation (Folder with wrench/cog)
-    icon: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZD0iTTAgNmw4LThoMTB2NEgzMnYyMEgweiIgZmlsbD0iI2ZmZDE2NiIvPjxwYXRoIGQ9Ik0wIDEwaDMyVjI4SDB6IiBmaWxsPSIjZmZhYzAwIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxOCIgcj0iNiIgZmlsbD0iIzY2NiIvPjxjaXJjbGUgY3g9IjE2IiBjeT0iMTgiIHI9IjMiIGZpbGw9IiNjY2MiLz48L3N2Zz4=',
+    icon: '/react95_icons/settings.png',
     content: `
       <div class="content-section">
         <h1>Skills</h1>
