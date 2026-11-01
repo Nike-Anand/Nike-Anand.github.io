@@ -2,8 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <title>My Portfolio - Windows XP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithiyanandam S | Software Engineer & Backend Specialist</title>
+    <meta name="description" content="Portfolio of Nithiyanandam S - Software Engineer specializing in backend architectures, distributed systems, and real-time services." />
+    <meta name="keywords" content="Nithiyanandam S, Software Engineer, Backend Engineer, Distributed Systems, Python, Java, FastAPI, Kubernetes" />
+    <meta name="author" content="Nithiyanandam S" />
+    <meta property="og:title" content="Nithiyanandam S | Software Engineer & Backend Specialist" />
+    <meta property="og:description" content="Explore my retro Windows XP interactive portfolio showcasing distributed systems, backend projects, and engineering experience." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -12,10 +19,12 @@
       <div class="boot-logo">
         <span class="boot-text">Microsoft</span>
         <h1 class="boot-title">Windows<span class="boot-xp">XP</span></h1>
+        <div class="boot-edition">Professional Edition</div>
       </div>
       <div class="boot-loader">
         <div class="boot-bar"></div>
       </div>
+      <div class="boot-skip-hint">Press any key or click to skip</div>
     </div>
 
     <!-- Desktop Environment -->
@@ -26,17 +35,21 @@
 
     <!-- Taskbar -->
     <div id="taskbar" class="taskbar">
-      <button id="start-button" class="start-button">
-        <!-- Exact windows XP start icon placeholder -->
+      <button id="start-button" class="start-button" aria-label="Start Menu" title="Click here to begin">
         <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgOGw1LTJWNEwyIDh6TTE0IDhsLTUtMlY0bDUgNHpNMjggMTBsNS0ydjRMMiAxeiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Start" class="start-icon" />
         <span class="start-text">start</span>
       </button>
       
       <div class="quick-launch">
-        <div class="quick-launch-icon">
-          <!-- Show Desktop icon placeholder -->
+        <button id="show-desktop-btn" class="quick-launch-icon" title="Show Desktop" aria-label="Show Desktop">
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHJlY3QgeD0iMSIgeT0iMiIgd2lkdGg9IjE0IiBoZWlnaHQ9IjExIiBmaWxsPSIjNjg5Q0QyIiBzdHJva2U9IiMzMzMiLz48cmVjdCB4PSIyIiB5PSIzIiB3aWR0aD0iMTIiIGhlaWdodD0iOSIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" alt="Show Desktop" />
-        </div>
+        </button>
+        <button id="ql-ie-btn" class="quick-launch-icon" title="Internet Explorer (Resume)" aria-label="Resume">
+          <img src="/react95_icons/msie1.png" alt="Internet Explorer" />
+        </button>
+        <button id="ql-cmd-btn" class="quick-launch-icon" title="Command Prompt" aria-label="Command Prompt">
+          <img src="/react95_icons/gears.png" alt="Command Prompt" />
+        </button>
       </div>
 
       <!-- Open window tabs -->
@@ -45,18 +58,21 @@
       <!-- System Tray / Clock -->
       <div id="system-tray" class="system-tray">
         <div class="system-tray-icons">
-          <!-- Generic system icons like volume, network -->
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgNnY0aDRsNSA1VjFsLTUgNVoiIGZpbGw9IiNjY2MiIHN0cm9rZT0iIzMzMyIvPjwvc3ZnPg==" alt="Volume" class="tray-icon" />
+          <button class="tray-icon-btn" id="tray-volume" title="Volume: 100%">
+            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTIgNnY0aDRsNSA1VjFsLTUgNVoiIGZpbGw9IiNjY2MiIHN0cm9rZT0iIzMzMyIvPjwvc3ZnPg==" alt="Volume" class="tray-icon" />
+          </button>
         </div>
-        <div id="clock" class="clock">12:00 PM</div>
+        <div id="clock" class="clock" title="Today">12:00 PM</div>
       </div>
     </div>
 
-    <!-- Start Menu (Exact Copy Layout) -->
+    <!-- Start Menu -->
     <div id="start-menu" class="start-menu hidden">
       <div class="start-menu-header">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OCA0OCI+PHJlY3Qgd2lkdGg9IjQ4IiBoZWlnaHQ9IjQ4IiBmaWxsPSIjZmZmIi8+PGNpcmNsZSBjeD0iMjQiIGN5PSIxOCIgcj0iOCIgZmlsbD0iI2Q0ZDQwMCIvPjxwYXRoIGQ9Ik0xMiAzOGE4IDggMCAwIDEgMTYtOGgxMGE4IDggMCAwIDEgOCB4eiIgZmlsbD0iIzMzMyIvPjwvc3ZnPg==" alt="User" class="user-avatar" />
-        <span class="user-name">Guest</span>
+        <div class="user-avatar-frame">
+          <img src="/react95_icons/computer_explorer_cool-0.png" alt="User" class="user-avatar" />
+        </div>
+        <span class="user-name">Nithiyanandam S</span>
       </div>
 
       <div class="start-menu-body">
@@ -65,37 +81,51 @@
             <!-- Items injected via JS -->
           </ul>
           <div class="start-menu-separator"></div>
-          <div class="all-programs">
+          <div class="all-programs" id="all-programs-btn" title="View all programs">
             <span>All Programs</span>
             <div class="all-programs-arrow">▶</div>
+          </div>
+          <!-- Flyout programs submenu -->
+          <div id="all-programs-menu" class="all-programs-menu hidden">
+            <div class="sub-item" data-app="about"><img src="/react95_icons/computer_explorer_cool-0.png" alt=""><span>About Me</span></div>
+            <div class="sub-item" data-app="projects"><img src="/react95_icons/directory_open_cool-0.png" alt=""><span>My Projects</span></div>
+            <div class="sub-item" data-app="resume"><img src="/react95_icons/msie1.png" alt=""><span>Resume (IE)</span></div>
+            <div class="sub-item" data-app="skills"><img src="/react95_icons/settings.png" alt=""><span>Technical Skills</span></div>
+            <div class="sub-item" data-app="contact"><img src="/react95_icons/network_cool_two_pcs-0.png" alt=""><span>Contact Me</span></div>
+            <div class="sub-item" data-app="cmd"><img src="/react95_icons/gears.png" alt=""><span>Command Prompt</span></div>
+            <div class="sub-item" data-app="recycle"><img src="/react95_icons/recycle_bin_empty-4.png" alt=""><span>Recycle Bin</span></div>
           </div>
         </div>
         <div class="start-menu-right">
           <ul class="start-menu-list right-list">
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTAgNGw2LTZIMjR2MTZIMHoiIGZpbGw9IiNmZmQxNjYiLz48cGF0aCBkPSJNMCA4aDI0VjI0SDB6IiBmaWxsPSIjZmZhYzAwIi8+PC9zdmc+" alt="My Documents">
-              <span>My Documents</span>
+            <li class="right-item" data-action="projects">
+              <img src="/react95_icons/directory_open_cool-0.png" alt="My Documents">
+              <span><strong>My Documents</strong> (Projects)</span>
             </li>
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTAgNGw2LTZIMjR2MTZIMHoiIGZpbGw9IiNmZmQxNjYiLz48cGF0aCBkPSJNMCA4aDI0VjI0SDB6IiBmaWxsPSIjZmZhYzAwIi8+PC9zdmc+" alt="My Recent Documents">
+            <li class="right-item" data-action="resume">
+              <img src="/react95_icons/notepad.png" alt="Recent Documents">
               <span>My Recent Documents</span>
             </li>
             <div class="start-menu-separator right-separator"></div>
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHJlY3QgeD0iMiIgeT0iNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iI2Q0ZDQwMCIvPjxyZWN0IHg9IjQiIHk9IjYiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxMiIgZmlsbD0iIzAwNThlNiIvPjwvc3ZnPg==" alt="My Computer">
-              <span>My Computer</span>
+            <li class="right-item" data-action="about">
+              <img src="/react95_icons/computer_explorer_cool-0.png" alt="My Computer">
+              <span><strong>My Computer</strong> (About)</span>
             </li>
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIgNnYxMmgyMGwtMTAtNnoiIGZpbGw9IiM2NjYiLz48L3N2Zz4=" alt="My Network Places">
+            <li class="right-item" data-action="contact">
+              <img src="/react95_icons/network_cool_two_pcs-0.png" alt="My Network Places">
               <span>My Network Places</span>
             </li>
             <div class="start-menu-separator right-separator"></div>
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iOCIgZmlsbD0iIzY2NiIvPjwvc3ZnPg==" alt="Control Panel">
-              <span>Control Panel</span>
+            <li class="right-item" data-action="skills">
+              <img src="/react95_icons/settings.png" alt="Control Panel">
+              <span>Control Panel (Skills)</span>
             </li>
-            <li class="right-item">
-              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTIgMmgxMnYxMkgyeiIgZmlsbD0iIzMzMyIvPjwvc3ZnPg==" alt="Run">
+            <li class="right-item" data-action="cmd">
+              <img src="/react95_icons/gears.png" alt="Terminal">
+              <span>Command Prompt</span>
+            </li>
+            <li class="right-item" data-action="run">
+              <img src="/react95_icons/arrow_right-1.png" alt="Run">
               <span>Run...</span>
             </li>
           </ul>
@@ -103,7 +133,7 @@
       </div>
 
       <div class="start-menu-footer">
-        <button class="footer-btn log-off-btn">
+        <button class="footer-btn log-off-btn" id="log-off-btn">
           <div class="icon-bg orange-icon">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTggNGM0IDAgNCAyIDQgNHY0SDhWNHpNMyA4aDVtLTUgM2g1IiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMiIvPjwvc3ZnPg==" alt="Log Off" />
           </div>
@@ -113,8 +143,91 @@
           <div class="icon-bg red-icon">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTggMnY2bTAtNiA2IDZtLTItNi00IDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIyIi8+PC9zdmc+" alt="Shut Down" />
           </div>
-          Shut Down
+          Shut Down...
         </button>
+      </div>
+    </div>
+
+    <!-- Shut Down Dialog Modal -->
+    <div id="shutdown-dialog" class="xp-modal hidden">
+      <div class="xp-dialog-box">
+        <div class="xp-dialog-titlebar">
+          <div class="xp-dialog-title">Shut Down Windows</div>
+          <button class="xp-dialog-close" id="shutdown-dialog-close">✕</button>
+        </div>
+        <div class="xp-dialog-content">
+          <div class="shutdown-header">
+            <img src="/react95_icons/computer_explorer_cool-0.png" alt="XP" style="width:36px; height:36px;">
+            <p>What do you want the computer to do?</p>
+          </div>
+          <div class="shutdown-options">
+            <select id="shutdown-select" class="xp-select">
+              <option value="restart">Restart (Reload Portfolio)</option>
+              <option value="turnoff">Turn Off (Safe to power off)</option>
+              <option value="standby">Stand by (Sleep screen)</option>
+            </select>
+            <p id="shutdown-description" class="shutdown-description">
+              Saves your session and restarts the Windows XP portfolio.
+            </p>
+          </div>
+          <div class="xp-dialog-actions">
+            <button class="xp-btn" id="shutdown-confirm-btn">OK</button>
+            <button class="xp-btn" id="shutdown-cancel-btn">Cancel</button>
+            <button class="xp-btn" id="shutdown-help-btn">Help</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Run Dialog Modal -->
+    <div id="run-dialog" class="xp-modal hidden">
+      <div class="xp-dialog-box" style="width: 380px;">
+        <div class="xp-dialog-titlebar">
+          <div class="xp-dialog-title">Run</div>
+          <button class="xp-dialog-close" id="run-dialog-close">✕</button>
+        </div>
+        <div class="xp-dialog-content">
+          <div class="run-header">
+            <img src="/react95_icons/arrow_right-1.png" alt="Run" style="width:32px; height:32px;">
+            <p>Type the name of a program, folder, or document, and Windows will open it for you.</p>
+          </div>
+          <div class="run-input-group">
+            <label for="run-command-input">Open:</label>
+            <input type="text" id="run-command-input" class="xp-input" placeholder="e.g. projects, resume, cmd, about" />
+          </div>
+          <div class="run-hints">Try: <code>about</code>, <code>projects</code>, <code>resume</code>, <code>skills</code>, <code>contact</code>, <code>cmd</code>, <code>github</code></div>
+          <div class="xp-dialog-actions">
+            <button class="xp-btn" id="run-confirm-btn">OK</button>
+            <button class="xp-btn" id="run-cancel-btn">Cancel</button>
+            <button class="xp-btn" id="run-browse-btn">Browse...</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Log Off / Welcome Lock Screen -->
+    <div id="logoff-screen" class="logoff-screen hidden">
+      <div class="logoff-content">
+        <div class="logoff-left">
+          <h2>Microsoft</h2>
+          <h1>Windows<span class="xp-sub">xp</span></h1>
+          <p>Click on your account to log on</p>
+        </div>
+        <div class="logoff-divider"></div>
+        <div class="logoff-right">
+          <div class="logoff-user-tile" id="logon-user-tile" title="Click to Log On">
+            <div class="user-avatar-frame large">
+              <img src="/react95_icons/computer_explorer_cool-0.png" alt="User" />
+            </div>
+            <div class="user-info">
+              <div class="user-title">Nithiyanandam S</div>
+              <div class="user-subtitle">Software Engineer (Online)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="logoff-footer">
+        <button class="footer-btn shut-down-btn" id="logoff-restart-btn">Turn Off Computer</button>
       </div>
     </div>
 
