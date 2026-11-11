@@ -307,7 +307,7 @@ const iconsData = [
               <p class="resume-contact-line">
                 Chennai, India • +91-7826060700 • 
                 <a href="mailto:nithiyanandam4826@gmail.com">nithiyanandam4826@gmail.com</a> • 
-                <a href="https://linkedin.com/in/nithiyanandam-s" target="_blank">LinkedIn</a> • 
+                <a href="https://www.linkedin.com/in/nithiyanandam-s-6a0553232/" target="_blank">LinkedIn</a> • 
                 <a href="https://github.com/Nike-Anand" target="_blank">GitHub</a>
               </p>
               <div class="resume-download-bar">
@@ -517,9 +517,9 @@ const iconsData = [
             <div class="channel-icon">💼</div>
             <div class="channel-details">
               <div class="channel-label">LinkedIn Profile</div>
-              <a href="https://linkedin.com/in/nithiyanandam-s" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/nithiyanandam-s</a>
+              <a href="https://www.linkedin.com/in/nithiyanandam-s-6a0553232/" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/nithiyanandam-s-6a0553232/</a>
             </div>
-            <a href="https://linkedin.com/in/nithiyanandam-s" target="_blank" rel="noopener noreferrer" class="xp-btn">Open ↗</a>
+            <a href="https://www.linkedin.com/in/nithiyanandam-s-6a0553232/" target="_blank" rel="noopener noreferrer" class="xp-btn">Open ↗</a>
           </div>
 
           <div class="contact-channel-card">
@@ -1217,7 +1217,7 @@ function setupRunDialog() {
     else if (cmd === 'contact' || cmd === 'email') openWindowById('contact');
     else if (cmd === 'recycle' || cmd === 'trash') openWindowById('recycle');
     else if (cmd === 'github') window.open('https://github.com/Nike-Anand', '_blank');
-    else if (cmd === 'linkedin') window.open('https://linkedin.com/in/nithiyanandam-s', '_blank');
+    else if (cmd === 'linkedin') window.open('https://www.linkedin.com/in/nithiyanandam-s-6a0553232/', '_blank');
     else if (cmd === 'calc') alert('Calculator: 2 + 2 = 4 (Result verified)');
     else if (cmd === 'notepad') openWindowById('resume');
     else {
@@ -1351,7 +1351,7 @@ Available commands:
           openWindowById('resume');
           break;
         case 'contact':
-          resp.innerHTML = `Email: nithiyanandam4826@gmail.com | Tel: +91-7826060700 | LinkedIn: in/nithiyanandam-s`;
+          resp.innerHTML = `Email: nithiyanandam4826@gmail.com | Tel: +91-7826060700 | LinkedIn: in/nithiyanandam-s-6a0553232/`;
           openWindowById('contact');
           break;
         case 'whoami':
@@ -1407,7 +1407,7 @@ window.copyToClipboard = function(text, btn) {
 window.downloadResumeText = function() {
   const text = `NITHIYANANDAM S - Software Engineer
 Email: nithiyanandam4826@gmail.com | Phone: +91-7826060700
-GitHub: https://github.com/Nike-Anand | LinkedIn: https://linkedin.com/in/nithiyanandam-s
+GitHub: https://github.com/Nike-Anand | LinkedIn: https://www.linkedin.com/in/nithiyanandam-s-6a0553232/
 
 EDUCATION:
 Sri Venkateswara College of Engineering (2023 - 2027)
