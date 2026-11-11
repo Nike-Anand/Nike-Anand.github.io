@@ -679,9 +679,12 @@ document.addEventListener('DOMContentLoaded', () => {
     bootScreen.style.opacity = '0';
     setTimeout(() => {
       bootScreen.classList.add('hidden');
-      // Auto open About Me window so visitor has immediate content!
+      // Auto open About Me window full screen so visitor has immediate full-page content!
       if (!openWindows['about']) {
         openWindowById('about');
+        if (!openWindows['about'].maximized) {
+          toggleMaximizeWindow('about');
+        }
       }
     }, 400);
   };
@@ -924,6 +927,11 @@ function openWindow(app) {
   const isSmallScreen = screenW <= 768;
   if (isSmallScreen) {
     winEl.classList.add('maximized');
+    const maxBtn = winEl.querySelector('.maximize');
+    if (maxBtn) {
+      maxBtn.textContent = '❐';
+      maxBtn.title = 'Restore Down';
+    }
   }
 
   winEl.innerHTML = `
@@ -1043,6 +1051,7 @@ function toggleMaximizeWindow(id) {
   const winEl = winInfo.element;
 
   winInfo.maximized = !winInfo.maximized;
+  const maxBtn = winEl.querySelector('.maximize');
   if (winInfo.maximized) {
     winInfo.prevBounds = {
       left: winEl.style.left,
@@ -1051,12 +1060,20 @@ function toggleMaximizeWindow(id) {
       height: winEl.style.height
     };
     winEl.classList.add('maximized');
+    if (maxBtn) {
+      maxBtn.textContent = '❐';
+      maxBtn.title = 'Restore Down';
+    }
   } else {
     winEl.classList.remove('maximized');
     winEl.style.left = winInfo.prevBounds.left;
     winEl.style.top = winInfo.prevBounds.top;
     winEl.style.width = winInfo.prevBounds.width;
     winEl.style.height = winInfo.prevBounds.height;
+    if (maxBtn) {
+      maxBtn.textContent = '□';
+      maxBtn.title = 'Maximize';
+    }
   }
 }
 

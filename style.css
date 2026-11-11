@@ -932,6 +932,11 @@ body, html {
   color: #000;
 }
 
+.about-me-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
 .profile-header-card {
   display: flex;
   align-items: center;
@@ -1676,33 +1681,130 @@ body, html {
 
 /* Print Styles for CV / Resume */
 @media print {
+  @page {
+    margin: 0.35in 0.45in !important;
+    size: portrait;
+  }
+
   body, html {
     overflow: visible !important;
     height: auto !important;
     background: #fff !important;
+    color: #111 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
   
+  /* Hide all OS chrome, taskbar, boot screen, modal, and icons */
+  #boot-screen, #taskbar, .desktop-icons-container, #start-menu, 
+  .window-titlebar, .ie-toolbar, .ie-status-bar, .resize-handle, 
+  .resume-download-bar, .xp-modal, #logoff-screen, .desktop {
+    background: none !important;
+  }
+
   #boot-screen, #taskbar, .desktop-icons-container, #start-menu, 
   .window-titlebar, .ie-toolbar, .ie-status-bar, .resize-handle, 
   .resume-download-bar, .xp-modal, #logoff-screen {
     display: none !important;
   }
   
+  /* CRITICAL: In print mode, hide ALL windows except the resume window */
   .xp-window {
+    display: none !important;
+  }
+
+  #window-resume {
+    display: block !important;
     position: static !important;
     width: 100% !important;
     height: auto !important;
     border: none !important;
     box-shadow: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   
-  .window-content, .ie-content-frame {
+  .window-content, .ie-browser, .ie-content-frame {
     overflow: visible !important;
     border: none !important;
     padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+    background: transparent !important;
   }
   
+  /* Compact single-page resume layout */
   .resume-sheet {
     max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    font-size: 10.5px !important;
+    line-height: 1.3 !important;
+    color: #111 !important;
+  }
+
+  .resume-header {
+    border-bottom: 2px solid #0053e5 !important;
+    padding-bottom: 3px !important;
+    margin-bottom: 6px !important;
+  }
+
+  .resume-name {
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin: 0 0 2px 0 !important;
+    color: #0a246a !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .resume-contact-line {
+    font-size: 9.5px !important;
+    margin: 0 !important;
+    color: #333 !important;
+  }
+
+  .resume-contact-line a {
+    color: #0053e5 !important;
+    text-decoration: underline !important;
+  }
+
+  .resume-sec-title {
+    margin: 6px 0 2px 0 !important;
+    font-size: 11px !important;
+    font-weight: bold !important;
+    padding-bottom: 1px !important;
+    color: #0a246a !important;
+    border-bottom: 1px solid #0053e5 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+  }
+
+  .resume-job {
+    margin-bottom: 4px !important;
+  }
+
+  .job-header {
+    font-size: 10.5px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    color: #000 !important;
+  }
+
+  .job-date {
+    font-size: 9.5px !important;
+    color: #555 !important;
+  }
+
+  .resume-bullets {
+    margin: 2px 0 4px 14px !important;
+    padding: 0 !important;
+    font-size: 9.8px !important;
+    line-height: 1.28 !important;
+  }
+
+  .resume-bullets li {
+    margin-bottom: 2px !important;
   }
 }
