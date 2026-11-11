@@ -1169,9 +1169,14 @@ function openWindow(app) {
   let left = Math.max(10, Math.min(screenW - width - 20, offset));
   let top = Math.max(10, Math.min(screenH - height - 40, offset));
 
-  if (app.id === 'about') {
-    // Exactly matches the user's reference photo (media_1794388409679_c47f4fa9.jpg):
-    // Full desktop height from top to taskbar, positioned beside the desktop icons (~110px width)
+  if (screenW <= 768) {
+    // Mobile responsive: fill mobile viewport cleanly without horizontal overflow
+    top = 0;
+    left = 0;
+    width = screenW;
+    height = Math.max(380, screenH - 30);
+  } else if (app.id === 'about') {
+    // Desktop: exactly matches user reference photo (media_1794388409679_c47f4fa9.jpg)
     top = 6;
     height = Math.max(450, screenH - 36);
     width = Math.min(620, Math.max(340, screenW - 140));
@@ -1184,7 +1189,7 @@ function openWindow(app) {
   winEl.style.top = top + 'px';
   winEl.style.zIndex = ++zIndexCounter;
 
-  const isSmallScreen = screenW <= 520 && app.id !== 'about';
+  const isSmallScreen = screenW <= 768;
   if (isSmallScreen) {
     winEl.classList.add('maximized');
     const maxBtn = winEl.querySelector('.maximize');

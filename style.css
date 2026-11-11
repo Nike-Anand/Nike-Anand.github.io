@@ -97,12 +97,15 @@ body, html {
   height: 100%;
   background: linear-gradient(90deg, #001f5c, #0058e6, #3a93ff, #0058e6, #001f5c);
   position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
   animation: boot-load 1.4s infinite linear;
 }
 
 @keyframes boot-load {
-  0% { left: -30px; }
-  100% { left: 170px; }
+  0% { transform: translateX(-30px); }
+  100% { transform: translateX(170px); }
 }
 
 .boot-skip-hint {
@@ -168,6 +171,7 @@ body, html {
   margin-bottom: 4px;
   filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.6));
   pointer-events: none;
+  image-rendering: pixelated;
 }
 
 .desktop-icon span {
@@ -965,6 +969,7 @@ body, html {
 .profile-img {
   width: 44px;
   height: 44px;
+  image-rendering: pixelated;
 }
 
 .online-indicator {
@@ -1824,14 +1829,87 @@ body, html {
 /* Responsive Styles */
 @media (max-width: 768px) {
   .xp-window {
-    width: 100% !important;
+    width: 100vw !important;
     height: calc(100% - 30px) !important;
     top: 0 !important;
     left: 0 !important;
-    border-radius: 0;
-    border: none;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
   }
   
+  .window-titlebar {
+    border-radius: 0 !important;
+    height: 36px !important;
+    padding: 0 8px !important;
+  }
+
+  .window-controls {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+  }
+
+  .window-btn {
+    width: 32px !important;
+    height: 28px !important;
+    font-size: 13px !important;
+    min-width: 32px !important;
+    min-height: 28px !important;
+  }
+
+  .resize-handle {
+    display: none !important;
+  }
+
+  .desktop-icons-container {
+    padding: 8px 6px !important;
+    gap: 12px 6px !important;
+  }
+
+  .desktop-icon {
+    width: 66px !important;
+  }
+
+  .desktop-icon span {
+    font-size: 10px !important;
+  }
+
+  .about-action-bar {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 6px !important;
+  }
+
+  .about-action-bar .xp-btn {
+    flex: 1 1 calc(50% - 6px) !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 6px 4px !important;
+    font-size: 11px !important;
+  }
+
+  .xp-table td {
+    font-size: 11px !important;
+    padding: 3px 2px !important;
+  }
+
+  .profile-header-card {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 10px !important;
+  }
+
+  .profile-tags {
+    justify-content: center !important;
+  }
+
+  .xp-balloon {
+    width: calc(100vw - 20px) !important;
+    right: 10px !important;
+    bottom: 36px !important;
+  }
+
   .start-menu {
     width: 96vw;
     left: 2vw;
