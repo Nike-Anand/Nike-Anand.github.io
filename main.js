@@ -17,12 +17,13 @@ const iconsData = [
           </div>
           <div class="profile-meta">
             <h1 class="profile-name">Nithiyanandam S</h1>
-            <h2 class="profile-headline">Software Engineer & Backend Specialist</h2>
+            <h2 class="profile-headline">Software Engineer & Full-Stack / ML Developer</h2>
             <div class="profile-tags">
+              <span class="badge">Next.js / React</span>
+              <span class="badge">Python & ML</span>
+              <span class="badge">Payload CMS</span>
               <span class="badge">Distributed Systems</span>
-              <span class="badge">FastAPI / Python</span>
-              <span class="badge">Java Architecture</span>
-              <span class="badge">Cloud & DevOps</span>
+              <span class="badge">Post-Quantum Crypto</span>
             </div>
           </div>
         </div>
@@ -30,12 +31,11 @@ const iconsData = [
         <div class="xp-groupbox">
           <legend class="xp-groupbox-legend">Summary</legend>
           <p>
-            Hello! I am a passionate backend software engineer specializing in scalable architectures, 
-            distributed microservices, low-latency pipelines, and automated CI/CD workflows. 
-            Currently working on enterprise Java and cloud infrastructure at <strong>Sify Technologies</strong>.
+            Hello! I am a software engineering student experienced in building responsive, user-friendly web applications 
+            for hospital organizations, distributed microservices, and deep learning OCR/NLP models. 
+            Two-time <strong>Smart India Hackathon</strong> national finalist, participant in <strong>Amazon ML Summer School 2026</strong>, and first-author published researcher.
           </p>
           <p>
-            I love diving deep into performance bottlenecks, functional paradigms, and post-quantum cryptographic security. 
             Welcome to my retro Windows XP environment—built as a nostalgic love letter to computing with modern engineering underneath!
           </p>
         </div>
@@ -44,20 +44,20 @@ const iconsData = [
           <legend class="xp-groupbox-legend">Quick Overview</legend>
           <table class="xp-table">
             <tr>
-              <td class="col-lbl"><strong>Current Role:</strong></td>
-              <td>Software Development Intern @ Sify Technologies (Enterprise Java & CI/CD)</td>
+              <td class="col-lbl"><strong>Experience:</strong></td>
+              <td>Software Development Engineer Intern @ Tech Machers (Next.js, Payload CMS, React, Docker)</td>
             </tr>
             <tr>
               <td class="col-lbl"><strong>Education:</strong></td>
-              <td>B.E. Computer Science & Engineering (2023 – 2027), SVCE | GPA: 7.9/10</td>
+              <td>B.E. Computer Science & Engineering (2023 – Expected May 2027), SVCE | CGPA: 7.8/10</td>
             </tr>
             <tr>
               <td class="col-lbl"><strong>Highlights:</strong></td>
-              <td>Smart India Hackathon (SIH) 2024 & 2025 National Finalist | Infosys Hackathon Top 6</td>
+              <td>SIH 2024 & 2025 National Finalist | Infosys Hackathon Top 6 | Amazon ML Summer School 2026</td>
             </tr>
             <tr>
               <td class="col-lbl"><strong>Location:</strong></td>
-              <td>Chennai, India (Open to Remote / Relocation)</td>
+              <td>Chennai, Tamil Nadu, India</td>
             </tr>
           </table>
         </div>
@@ -268,15 +268,15 @@ const iconsData = [
               <button class="ie-btn" onclick="openWindowById('resume')"><img src="/react95_icons/refresh.png" class="ie-btn-icon" alt="Refresh"></button>
               <button class="ie-btn" onclick="openWindowById('about')"><img src="/react95_icons/home.png" class="ie-btn-icon" alt="Home"></button>
               <div class="ie-btn-sep"></div>
-              <button class="ie-btn" onclick="window.print()" title="Print CV / Save as PDF">
-                <img src="/react95_icons/printer.png" class="ie-btn-icon" alt="Print">
-                <span class="ie-btn-text">Print / PDF</span>
-              </button>
-              <button class="ie-btn" onclick="downloadResumeText()" title="Download Clean Text CV">
+              <a href="/resume.pdf" target="_blank" class="ie-btn" style="text-decoration:none;" title="View Official PDF Resume">
+                <img src="/react95_icons/printer.png" class="ie-btn-icon" alt="View PDF">
+                <span class="ie-btn-text">View PDF</span>
+              </a>
+              <a href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" class="ie-btn" style="text-decoration:none;" title="Download Original PDF Resume">
                 <img src="/react95_icons/notepad.png" class="ie-btn-icon" alt="Download">
-                <span class="ie-btn-text">Download CV</span>
-              </button>
-              <a href="mailto:nithiyanandam4826@gmail.com" class="ie-btn" style="text-decoration:none;">
+                <span class="ie-btn-text">Download PDF</span>
+              </a>
+              <a href="mailto:nikeanand97@gmail.com" class="ie-btn" style="text-decoration:none;">
                 <img src="/react95_icons/envelope_closed.png" class="ie-btn-icon" alt="Email">
                 <span class="ie-btn-text">Hire Me</span>
               </a>
@@ -289,7 +289,7 @@ const iconsData = [
                 <span class="ie-address-label">Address</span>
                 <div class="ie-address-input-wrapper">
                   <img src="/react95_icons/msie2.png" alt="">
-                  <input type="text" value="https://portfolio.s-nithiyanandam.dev/resume" id="ie-address-bar" />
+                  <input type="text" value="https://drive.google.com/file/d/1blr2kOwfY969zjCi__Vzlmxu1lAuCw7I/view" id="ie-address-bar" />
                 </div>
                 <div class="ie-go-container">
                   <button class="ie-go-btn" onclick="handleIEAddressGo()"><img src="/react95_icons/arrow_right-1.png" style="width:12px;height:12px;" alt="">Go</button>
@@ -305,14 +305,20 @@ const iconsData = [
             <div class="resume-header">
               <h1 class="resume-name">NITHIYANANDAM S</h1>
               <p class="resume-contact-line">
-                Chennai, India • +91-7826060700 • 
-                <a href="mailto:nithiyanandam4826@gmail.com">nithiyanandam4826@gmail.com</a> • 
+                Chennai, Tamil Nadu, India • +91-7826060700 • 
+                <a href="mailto:nikeanand97@gmail.com">nikeanand97@gmail.com</a> • 
                 <a href="https://www.linkedin.com/in/nithiyanandam-s-6a0553232/" target="_blank">LinkedIn</a> • 
-                <a href="https://github.com/Nike-Anand" target="_blank">GitHub</a>
+                <a href="https://github.com/Nike-Anand" target="_blank">GitHub</a> •
+                <a href="https://leetcode.com/u/Nike_Anand/" target="_blank">LeetCode</a>
               </p>
               <div class="resume-download-bar">
-                <button class="xp-btn" onclick="window.print()">🖨️ Print to PDF</button>
-                <button class="xp-btn" onclick="downloadResumeText()">💾 Download Markdown / Text</button>
+                <a href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" class="xp-btn" style="text-decoration:none;">
+                  💾 Download Official PDF (223 KB)
+                </a>
+                <a href="https://drive.google.com/file/d/1blr2kOwfY969zjCi__Vzlmxu1lAuCw7I/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="xp-btn" style="text-decoration:none;">
+                  ☁️ Open in Google Drive ↗
+                </a>
+                <button class="xp-btn" onclick="window.print()">🖨️ Print View</button>
               </div>
             </div>
 
@@ -321,36 +327,34 @@ const iconsData = [
               
               <div class="resume-job">
                 <div class="job-header">
-                  <strong>Software Development Intern</strong> — <em>Sify Technologies</em>
-                  <span class="job-date">Mar 2026 – Present</span>
+                  <strong>Software Development Engineer Intern</strong> — <em>Tech Machers, Chennai</em>
+                  <span class="job-date">Mar 2026 – Aug 2026</span>
                 </div>
                 <ul class="resume-bullets">
-                  <li>Engineered enterprise Java backend modules implementing Factory and Strategy design patterns to decouple business logic.</li>
-                  <li>Built Python automated CI/CD deployment pipelines with structured logging, telemetry, and automated linting checks.</li>
-                  <li>Collaborated across cross-functional teams to diagnose edge-case latency spikes in distributed database querying.</li>
+                  <li>Migrated websites of a 9-division hospital organization from static pages to Payload CMS, significantly improving page load time and content editing workflows.</li>
+                  <li>Built reusable CMS blocks and a user-friendly admin panel with HTML, CSS, JavaScript, React, Next.js, and Node.js; containerized and deployed with Docker.</li>
+                  <li>Resolved 150+ P1–P3 bugs across routing, rendering, and REST API integration through team collaboration, Git, and Agile methodology.</li>
                 </ul>
               </div>
 
               <div class="resume-job">
                 <div class="job-header">
-                  <strong>Backend / Systems Research Intern</strong> — <em>Altruisty</em>
-                  <span class="job-date">Dec 2023 – Jan 2025</span>
-                </div>
-                <ul class="resume-bullets">
-                  <li>Designed and deployed backend orchestration microservices across 12+ projects with a focus on inference latency optimization.</li>
-                  <li>Developed multi-agent automated pipelines and evaluation frameworks with self-healing feedback triggers.</li>
-                  <li>Integrated containerized Docker environments for reproducible multi-tenant deployment.</li>
-                </ul>
-              </div>
-
-              <div class="resume-job">
-                <div class="job-header">
-                  <strong>Data Analyst Intern</strong> — <em>Vi (Vodafone Idea)</em>
+                  <strong>Data Analyst Intern</strong> — <em>Vi (Vodafone Idea), Chennai</em>
                   <span class="job-date">Dec 2025 – Jan 2026</span>
                 </div>
                 <ul class="resume-bullets">
-                  <li>Optimized complex SQL queries across telecommunication datasets exceeding 10M rows, achieving a 40% execution speedup.</li>
-                  <li>Utilized window functions, partitioned CTEs, and indexed lookups for real-time reporting dashboards.</li>
+                  <li>Analyzed telecom datasets spanning millions of records using SQL and Python to identify customer churn patterns and actionable retention insights.</li>
+                </ul>
+              </div>
+
+              <div class="resume-job">
+                <div class="job-header">
+                  <strong>AI/ML Intern & Generative AI Trainer</strong> — <em>Altruisty, Chennai</em>
+                  <span class="job-date">Oct 2024 – Nov 2025</span>
+                </div>
+                <ul class="resume-bullets">
+                  <li>Trained and mentored 20+ interns via technical presentations on Generative AI, prompt engineering, and transformer models.</li>
+                  <li>Built a product description-generator from scratch using deep learning and NLP on the Amazon Product Dataset (~48 million products), achieving 96% accuracy.</li>
                 </ul>
               </div>
             </section>
@@ -360,22 +364,24 @@ const iconsData = [
               <div class="resume-job">
                 <div class="job-header">
                   <strong>Sri Venkateswara College of Engineering (SVCE)</strong>
-                  <span class="job-date">2023 – 2027</span>
+                  <span class="job-date">2023 – Expected May 2027</span>
                 </div>
-                <p style="margin: 2px 0;">Bachelor of Engineering (B.E.) in Computer Science and Engineering | <strong>GPA: 7.9 / 10</strong></p>
+                <p style="margin: 2px 0;">Bachelor of Engineering (B.E.) in Computer Science and Engineering | <strong>CGPA: 7.8 / 10</strong></p>
                 <p style="margin: 2px 0; font-size: 11px; color: #444;">
-                  <em>Relevant Coursework: Data Structures & Algorithms, Operating Systems, Database Management Systems, Distributed Computing, Computer Networks, Functional Programming</em>
+                  <em>Core CS: Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks, Object-Oriented Design, Cryptography</em>
                 </p>
               </div>
             </section>
 
             <section class="resume-section">
-              <h3 class="resume-sec-title">KEY ACHIEVEMENTS & RESEARCH</h3>
+              <h3 class="resume-sec-title">KEY ACHIEVEMENTS & CERTIFICATIONS</h3>
               <ul class="resume-bullets">
-                <li><strong>SIH 2024 National Finalist (Team Lead):</strong> Engineered post-quantum secure communication framework for IoT using CRYSTALS-Kyber.</li>
-                <li><strong>SIH 2025 National Finalist:</strong> Developed energy-efficient computing system for edge hardware.</li>
-                <li><strong>Infosys Hackathon:</strong> Ranked Top 6 nationwide among 5,000+ participating teams.</li>
-                <li><strong>Research Publication:</strong> Author of <em>"Secure AI Systems"</em> published in IJCRT / ICICRCET’25.</li>
+                <li><strong>Smart India Hackathon (SIH):</strong> Two-time National Finalist (2024 & 2025 Team Lead).</li>
+                <li><strong>Infosys Hackathon 2025:</strong> Ranked Top 6 nationwide among thousands of teams.</li>
+                <li><strong>Amazon ML Summer School 2026:</strong> Selected participant in competitive machine learning cohort.</li>
+                <li><strong>D3 Fest, IIIT Bhubaneswar:</strong> State Winner, All India Rank 9.</li>
+                <li><strong>First-Author Research Publication:</strong> <em>"Lightweight Post-Quantum Cryptography for IoT"</em>, IJCRT (2025).</li>
+                <li><strong>Certifications:</strong> Google Cloud Generative AI Leader • NPTEL Computer Vision & NLP (Elite + Gold) • Postman API Student Expert • Anthropic AI Fluency.</li>
               </ul>
             </section>
           </div>
@@ -499,9 +505,9 @@ const iconsData = [
             <div class="channel-icon">📧</div>
             <div class="channel-details">
               <div class="channel-label">Direct Email</div>
-              <a href="mailto:nithiyanandam4826@gmail.com" class="channel-val">nithiyanandam4826@gmail.com</a>
+              <a href="mailto:nikeanand97@gmail.com" class="channel-val">nikeanand97@gmail.com</a>
             </div>
-            <button class="xp-btn" onclick="copyToClipboard('nithiyanandam4826@gmail.com', this)">Copy</button>
+            <button class="xp-btn" onclick="copyToClipboard('nikeanand97@gmail.com', this)">Copy</button>
           </div>
 
           <div class="contact-channel-card">
@@ -529,6 +535,33 @@ const iconsData = [
               <a href="https://github.com/Nike-Anand" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/Nike-Anand</a>
             </div>
             <a href="https://github.com/Nike-Anand" target="_blank" rel="noopener noreferrer" class="xp-btn">Open ↗</a>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">🧩</div>
+            <div class="channel-details">
+              <div class="channel-label">LeetCode Profile</div>
+              <a href="https://leetcode.com/u/Nike_Anand/" target="_blank" rel="noopener noreferrer" class="channel-val">leetcode.com/u/Nike_Anand/</a>
+            </div>
+            <a href="https://leetcode.com/u/Nike_Anand/" target="_blank" rel="noopener noreferrer" class="xp-btn">Open ↗</a>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">📸</div>
+            <div class="channel-details">
+              <div class="channel-label">Instagram</div>
+              <a href="https://www.instagram.com/jtz_me_anand?vrfl=cmRuMGc3dWk5cXgz" target="_blank" rel="noopener noreferrer" class="channel-val">@jtz_me_anand</a>
+            </div>
+            <a href="https://www.instagram.com/jtz_me_anand?vrfl=cmRuMGc3dWk5cXgz" target="_blank" rel="noopener noreferrer" class="xp-btn">Open ↗</a>
+          </div>
+
+          <div class="contact-channel-card">
+            <div class="channel-icon">📄</div>
+            <div class="channel-details">
+              <div class="channel-label">Resume PDF</div>
+              <a href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" class="channel-val">Download Nithiyanandam_S_Resume.pdf</a>
+            </div>
+            <a href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" class="xp-btn">Download ⬇</a>
           </div>
         </div>
 
@@ -1405,30 +1438,34 @@ window.copyToClipboard = function(text, btn) {
 };
 
 window.downloadResumeText = function() {
-  const text = `NITHIYANANDAM S - Software Engineer
-Email: nithiyanandam4826@gmail.com | Phone: +91-7826060700
+  const text = `NITHIYANANDAM S - Software Engineering Intern
+Email: nikeanand97@gmail.com | Phone: +91-7826060700
 GitHub: https://github.com/Nike-Anand | LinkedIn: https://www.linkedin.com/in/nithiyanandam-s-6a0553232/
+LeetCode: https://leetcode.com/u/Nike_Anand/
 
 EDUCATION:
-Sri Venkateswara College of Engineering (2023 - 2027)
-B.E. Computer Science and Engineering | GPA: 7.9/10
+Sri Venkateswara College of Engineering (2023 - Expected May 2027)
+Bachelor of Engineering (B.E.) in Computer Science and Engineering | CGPA: 7.8/10
 
-EXPERIENCE:
-- Software Development Intern | Sify Technologies (Mar 2026 - Present)
-  Enterprise Java backend modules, Factory & Strategy design patterns, Python CI/CD pipelines.
-- Backend / Systems Research Intern | Altruisty (Dec 2023 - Jan 2025)
-  Orchestration pipelines across 12+ projects, inference latency optimization, self-healing multi-agent workflows.
-- Data Analyst Intern | Vi (Vodafone Idea) (Dec 2025 - Jan 2026)
-  SQL optimization across 10M+ rows, reducing runtime by 40%.
+WORK EXPERIENCE:
+- Software Development Engineer Intern | Tech Machers, Chennai (Mar 2026 – Aug 2026)
+  Migrated websites of a 9-division hospital organization to Payload CMS, React, Next.js, Node.js, Docker.
+  Resolved 150+ P1-P3 bugs across routing, rendering, and REST API integration.
+- Data Analyst Intern | Vi (Vodafone Idea), Chennai (Dec 2025 – Jan 2026)
+  Telecom dataset analysis spanning millions of records, customer churn patterns with SQL and Python.
+- AI/ML Intern & Generative AI Trainer | Altruisty, Chennai (Oct 2024 – Nov 2025)
+  Trained 20+ interns on Generative AI. Built NLP product description generator on Amazon Product Dataset (~48M items) with 96% accuracy.
+
+PROJECTS:
+- Tamil Historical Character Recognition System (PyTorch, OpenCV, CRNN, OCR)
+- Lightweight Post-Quantum Cryptography for IoT (Python, Flask, ESP8266, PQC - Published in IJCRT 2025)
+- Bus Route Finder (Chennai MTC) (Python, PyTorch, Graph Search Algorithms)
 
 ACHIEVEMENTS:
-- SIH 2024 National Finalist (Team Lead) - Quantum-Resistant IoT Framework
-- SIH 2025 National Finalist - Energy-Efficient Edge Computing
-- Infosys Hackathon Top 6 Nationwide
-- Research Publication: "Secure AI Systems", IJCRT / ICICRCET'25
-
-CORE SKILLS:
-Python, Java, C/C++, SQL, FastAPI, Docker, Kubernetes, AWS, Distributed Systems.
+- Smart India Hackathon (SIH) National Finalist (2024 & 2025 Team Lead)
+- Infosys Hackathon 2025 (Top 6 Nationwide)
+- Amazon ML Summer School 2026 Participant
+- First-Author Research Publication in IJCRT (2025)
 `;
   const blob = new Blob([text], { type: 'text/plain' });
   const url = URL.createObjectURL(blob);
@@ -1457,7 +1494,7 @@ window.handleContactSubmit = function(e) {
   const email = document.getElementById('contact-email').value;
   const msg = document.getElementById('contact-msg').value;
 
-  const mailtoUrl = `mailto:nithiyanandam4826@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg + "\n\nReply to: " + email)}`;
+  const mailtoUrl = `mailto:nikeanand97@gmail.com?subject=Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(msg + "\n\nReply to: " + email)}`;
   window.location.href = mailtoUrl;
 
   alert(`Thank you, ${name}! Your email client will now open with your message addressed to Nithiyanandam S.`);
