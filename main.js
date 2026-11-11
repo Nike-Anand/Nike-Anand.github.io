@@ -33,31 +33,82 @@ const iconsData = [
           <p>
             Hello! I am a software engineering student experienced in building responsive, user-friendly web applications 
             for hospital organizations, distributed microservices, and deep learning OCR/NLP models. 
-            Two-time <strong>Smart India Hackathon</strong> national finalist, participant in <strong>Amazon ML Summer School 2026</strong>, and first-author published researcher.
+            Two-time <strong>Smart India Hackathon</strong> national finalist (Team Lead), participant in <strong>Amazon ML Summer School 2026</strong>, and first-author published researcher in Post-Quantum Cryptography.
           </p>
-          <p>
-            Welcome to my retro Windows XP environment—built as a nostalgic love letter to computing with modern engineering underneath!
+          <p style="margin-bottom:0;">
+            Targeting <strong>Software Development Engineer (SDE)</strong>, <strong>Full-Stack</strong>, and <strong>Machine Learning</strong> roles.
           </p>
+        </div>
+
+        <div class="xp-groupbox" style="margin-top: 15px;">
+          <legend class="xp-groupbox-legend">Commercial Experience & Internships</legend>
+          <div style="margin-bottom: 10px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>🏢 Software Development Engineer Intern</strong>
+              <span style="font-size: 11px; color: #555;">Mar 2026 – Aug 2026</span>
+            </div>
+            <div style="font-size: 11.5px; color: #0a246a; font-weight: 500;">Tech Machers, Chennai</div>
+            <ul style="margin: 4px 0 0 16px; padding: 0; font-size: 11px; line-height: 1.35;">
+              <li>Migrated 9-division hospital organization websites to Payload CMS, Next.js, and React; containerized with Docker.</li>
+              <li>Tested admin panel with real healthcare editors, reducing content turnaround time by 60%.</li>
+              <li>Resolved 150+ P1–P3 bugs across routing, SSR, and REST API integration via Agile sprints.</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 10px; border-top: 1px dashed #d4d0c8; padding-top: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>📊 Data Analyst Intern</strong>
+              <span style="font-size: 11px; color: #555;">Dec 2025 – Jan 2026</span>
+            </div>
+            <div style="font-size: 11.5px; color: #0a246a; font-weight: 500;">Vi (Vodafone Idea), Chennai</div>
+            <ul style="margin: 4px 0 0 16px; padding: 0; font-size: 11px; line-height: 1.35;">
+              <li>Analyzed telecom datasets spanning millions of records using SQL & Python for customer churn patterns.</li>
+              <li>Synthesized retention cohorts and presented actionable findings to technical leadership.</li>
+            </ul>
+          </div>
+
+          <div style="border-top: 1px dashed #d4d0c8; padding-top: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline;">
+              <strong>🤖 AI/ML Intern & Generative AI Trainer</strong>
+              <span style="font-size: 11px; color: #555;">Oct 2024 – Nov 2025</span>
+            </div>
+            <div style="font-size: 11.5px; color: #0a246a; font-weight: 500;">Altruisty, Chennai</div>
+            <ul style="margin: 4px 0 0 16px; padding: 0; font-size: 11px; line-height: 1.35;">
+              <li>Trained and mentored 20+ engineering interns on Generative AI, prompt engineering, and transformer models.</li>
+              <li>Engineered a deep learning NLP product description generator on Amazon Product Dataset (~48M products) with 96% accuracy.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="xp-groupbox" style="margin-top: 15px;">
+          <legend class="xp-groupbox-legend">Key Honors & Credibility Signals</legend>
+          <ul style="margin: 2px 0 2px 16px; padding: 0; font-size: 11px; line-height: 1.4;">
+            <li>🏆 <strong>Smart India Hackathon (SIH):</strong> Two-time National Finalist (2024 & 2025 Team Lead).</li>
+            <li>🌟 <strong>Infosys Hackathon 2025:</strong> Ranked Top 6 nationwide among thousands of collegiate teams.</li>
+            <li>⚡ <strong>Amazon ML Summer School 2026:</strong> Selected participant in competitive machine learning cohort.</li>
+            <li>📜 <strong>First-Author Research Publication:</strong> <em>"Lightweight Post-Quantum Cryptography for IoT"</em>, IJCRT (2025).</li>
+            <li>🥇 <strong>D3 Fest, IIIT Bhubaneswar:</strong> State Winner, All India Rank 9.</li>
+          </ul>
         </div>
 
         <div class="xp-groupbox" style="margin-top: 15px;">
           <legend class="xp-groupbox-legend">Quick Overview</legend>
           <table class="xp-table">
             <tr>
-              <td class="col-lbl"><strong>Experience:</strong></td>
-              <td>Software Development Engineer Intern @ Tech Machers (Next.js, Payload CMS, React, Docker)</td>
-            </tr>
-            <tr>
               <td class="col-lbl"><strong>Education:</strong></td>
-              <td>B.E. Computer Science & Engineering (2023 – Expected May 2027), SVCE | CGPA: 7.8/10</td>
+              <td>B.E. Computer Science & Engineering (2023 – Expected May 2027), SVCE | <strong>CGPA: 7.8 / 10</strong></td>
             </tr>
             <tr>
-              <td class="col-lbl"><strong>Highlights:</strong></td>
-              <td>SIH 2024 & 2025 National Finalist | Infosys Hackathon Top 6 | Amazon ML Summer School 2026</td>
+              <td class="col-lbl"><strong>Target Roles:</strong></td>
+              <td>Software Development Engineer (SDE) / Full-Stack Engineer / ML Engineer</td>
+            </tr>
+            <tr>
+              <td class="col-lbl"><strong>Availability:</strong></td>
+              <td>Immediate / Flexible for Summer & Full-Time Internships / SDE Positions</td>
             </tr>
             <tr>
               <td class="col-lbl"><strong>Location:</strong></td>
-              <td>Chennai, Tamil Nadu, India</td>
+              <td>Chennai, Tamil Nadu, India (Open to Hybrid, Remote, or Relocation)</td>
             </tr>
           </table>
         </div>
@@ -67,17 +118,119 @@ const iconsData = [
             <img src="/react95_icons/directory_open_cool-0.png" alt="" />
             <span>Explore Projects</span>
           </button>
+          <button class="xp-btn" onclick="openWindowById('recruiter')">
+            <img src="/react95_icons/notepad.png" alt="" />
+            <span>Recruiter Note.txt</span>
+          </button>
           <button class="xp-btn" onclick="openWindowById('resume')">
             <img src="/react95_icons/msie1.png" alt="" />
             <span>View Resume</span>
           </button>
+          <a class="xp-btn" href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" style="text-decoration:none;">
+            <img src="/react95_icons/printer.png" alt="" />
+            <span>Download PDF (223 KB)</span>
+          </a>
           <button class="xp-btn" onclick="openWindowById('contact')">
             <img src="/react95_icons/envelope_closed.png" alt="" />
             <span>Contact Me</span>
           </button>
           <a class="xp-btn link-btn" href="https://github.com/Nike-Anand" target="_blank" rel="noopener noreferrer">
             <img src="/react95_icons/gears.png" alt="" />
-            <span>GitHub Profile ↗</span>
+            <span>GitHub ↗</span>
+          </a>
+        </div>
+      </div>
+    `
+  },
+  {
+    id: 'recruiter',
+    title: 'Recruiter Note.txt',
+    icon: '/react95_icons/notepad.png',
+    width: 660,
+    height: 520,
+    content: `
+      <div class="notepad-container">
+        <div class="notepad-menubar">
+          <span><u>F</u>ile</span>
+          <span><u>E</u>dit</span>
+          <span><u>F</u>ormat</span>
+          <span><u>V</u>iew</span>
+          <span><u>H</u>elp</span>
+        </div>
+        <div class="notepad-content">======================================================================
+CANDIDATE DOSSIER: NITHIYANANDAM S
+Target Roles: Software Development Engineer (SDE) | Full-Stack | ML Engineer
+Status: Ready for immediate internship / full-time opportunities (2026/2027)
+Location: Chennai, Tamil Nadu, India (Open to Hybrid / Remote / Relocation)
+======================================================================
+
+[EXECUTIVE SUMMARY]
+High-velocity engineering student with commercial internship experience across
+Full-Stack systems, Data Analytics, and Deep Learning / NLP architectures.
+Two-time Smart India Hackathon (SIH 2024 & 2025) National Finalist (Team Lead),
+Top 6 nationwide in Infosys Hackathon 2025, Amazon ML Summer School participant,
+and first-author published researcher in Post-Quantum Cryptography.
+
+----------------------------------------------------------------------
+[COMMERCIAL INTERNSHIP EXPERIENCE]
+----------------------------------------------------------------------
+1. Software Development Engineer Intern @ Tech Machers (Mar 2026 – Aug 2026)
+   • Migrated hospital websites (9 divisions) to Payload CMS, Next.js, and React.
+   • Containerized microservices with Docker; reduced content update turnaround by 60%.
+   • Resolved 150+ P1–P3 bugs across routing, SSR, and REST API integration.
+
+2. Data Analyst Intern @ Vi (Vodafone Idea) (Dec 2025 – Jan 2026)
+   • Scaled customer churn telemetry across millions of telecom rows with SQL & Python.
+   • Delivered actionable retention insights directly to network optimization leads.
+
+3. AI/ML Intern & Generative AI Trainer @ Altruisty (Oct 2024 – Nov 2025)
+   • Mentored 20+ interns in GenAI, prompt engineering, and transformer models.
+   • Engineered product description generator on Amazon Product Dataset (96% acc).
+
+----------------------------------------------------------------------
+[TOP HONORS & RESEARCH]
+----------------------------------------------------------------------
+• Smart India Hackathon: Two-time National Finalist (SIH 2024 & SIH 2025 Team Lead)
+• Infosys Hackathon 2025: Ranked Top 6 nationwide among thousands of collegiate teams
+• Amazon ML Summer School 2026: Selected for competitive machine learning program
+• Published Paper: "Lightweight Post-Quantum Cryptography for IoT", IJCRT (2025)
+• D3 Fest, IIIT Bhubaneswar: State Winner, All India Rank 9
+
+----------------------------------------------------------------------
+[CORE TECH STACK]
+----------------------------------------------------------------------
+• Languages: Python, JavaScript, TypeScript, C, C++, Java, SQL
+• Web & Full-Stack: React, Next.js, Tailwind CSS, Payload CMS, Node.js, HTML5/CSS3
+• Backend & DB: FastAPI, Flask, REST APIs, Microservices, PostgreSQL, MySQL, MongoDB
+• AI / ML: PyTorch, OpenCV, OCR (CRNN architectures), Transformers, NLP, GenAI
+• DevOps & Cloud: Docker, Git, GitHub Actions, Postman, Linux, Agile/Scrum
+
+----------------------------------------------------------------------
+[EDUCATION & CREDENTIALS]
+----------------------------------------------------------------------
+• Sri Venkateswara College of Engineering (SVCE)
+  B.E. in Computer Science & Engineering (2023 - Expected May 2027) | CGPA: 7.8/10
+• Certifications: Google Cloud GenAI Leader, NPTEL Computer Vision & NLP (Elite+Gold),
+  Postman API Student Expert, Anthropic AI Fluency
+
+----------------------------------------------------------------------
+[DIRECT CONTACT CHANNELS]
+----------------------------------------------------------------------
+• Email:    nikeanand97@gmail.com
+• Phone:    +91-7826060700
+• LinkedIn: https://www.linkedin.com/in/nithiyanandam-s-6a0553232/
+• GitHub:   https://github.com/Nike-Anand
+• LeetCode: https://leetcode.com/u/Nike_Anand/
+======================================================================</div>
+        <div class="notepad-action-bar">
+          <a href="/resume.pdf" download="Nithiyanandam_S_Resume.pdf" class="xp-btn" style="text-decoration:none;">
+            💾 Download Official PDF (223 KB)
+          </a>
+          <button class="xp-btn" onclick="openWindowById('resume')">
+            🖨️ View & Print Resume
+          </button>
+          <a href="mailto:nikeanand97@gmail.com?subject=Interview%20Inquiry%20-%20Nithiyanandam%20S" class="xp-btn primary-btn" style="text-decoration:none;">
+            ✉️ Email Candidate
           </a>
         </div>
       </div>
@@ -87,23 +240,31 @@ const iconsData = [
     id: 'projects',
     title: 'My Projects',
     icon: '/react95_icons/directory_open_cool-0.png',
-    width: 720,
-    height: 520,
+    width: 760,
+    height: 540,
     content: `
       <div class="content-section">
         <div class="section-banner">
           <div>
             <h2 style="margin: 0 0 4px 0;">Engineering & Systems Projects</h2>
-            <p style="margin: 0; color: #555; font-size: 12px;">Verified implementations in distributed computing, cryptography, and microservices.</p>
+            <p style="margin: 0; color: #555; font-size: 12px;">Verified implementations across Full-Stack, Distributed Systems, ML & Cryptography.</p>
           </div>
           <a href="https://github.com/Nike-Anand" target="_blank" rel="noopener noreferrer" class="xp-btn" style="text-decoration:none;">
             View All on GitHub ↗
           </a>
         </div>
 
+        <!-- Recruiter Filter Bar -->
+        <div class="project-filters">
+          <button class="filter-btn active" onclick="window.filterProjects('all', this)">All Projects (7)</button>
+          <button class="filter-btn" onclick="window.filterProjects('sde', this)">💻 SDE & Full-Stack</button>
+          <button class="filter-btn" onclick="window.filterProjects('ai', this)">🤖 AI / ML & Vision</button>
+          <button class="filter-btn" onclick="window.filterProjects('systems', this)">🔐 Systems & Research</button>
+        </div>
+
         <div class="projects-container">
           <!-- Project 1: Landslide Nexus -->
-          <div class="project-box">
+          <div class="project-box" data-category="sde,systems">
             <div class="project-header">
               <img src="/react95_icons/computer_explorer_cool-0.png" class="project-icon" alt="" />
               <div>
@@ -132,7 +293,7 @@ const iconsData = [
           </div>
 
           <!-- Project 2: AI Enterprise Cost Intelligence -->
-          <div class="project-box">
+          <div class="project-box" data-category="sde,ai">
             <div class="project-header">
               <img src="/react95_icons/settings.png" class="project-icon" alt="" />
               <div>
@@ -159,7 +320,7 @@ const iconsData = [
           </div>
 
           <!-- Project 3: PR Assist & Code Review Agent -->
-          <div class="project-box">
+          <div class="project-box" data-category="sde,ai">
             <div class="project-header">
               <img src="/react95_icons/gears.png" class="project-icon" alt="" />
               <div>
@@ -186,7 +347,7 @@ const iconsData = [
           </div>
 
           <!-- Project 4: PQC Cryptographic Engine -->
-          <div class="project-box">
+          <div class="project-box" data-category="systems">
             <div class="project-header">
               <img src="/react95_icons/network_cool_two_pcs-0.png" class="project-icon" alt="" />
               <div>
@@ -206,12 +367,37 @@ const iconsData = [
               <a href="https://github.com/Nike-Anand/PQC-Algorithm" target="_blank" rel="noopener noreferrer" class="xp-btn">
                 PQC Repository ↗
               </a>
-              <span class="project-status">National Finalist</span>
+              <span class="project-status">Published IJCRT 2025</span>
             </div>
           </div>
 
-          <!-- Project 5: Semantic RAG & Vector Search -->
-          <div class="project-box">
+          <!-- Project 5: Tamil Historical Character Recognition -->
+          <div class="project-box" data-category="ai">
+            <div class="project-header">
+              <img src="/react95_icons/notepad.png" class="project-icon" alt="" />
+              <div>
+                <div class="award-tag">📜 95%+ Accuracy · Deep Learning OCR</div>
+                <h3 class="project-title">Tamil Historical Character Recognition System</h3>
+                <div class="project-tech">Python • PyTorch • OpenCV • CRNN (CNN + BiLSTM + CTC) • Document Segmentation</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Offline end-to-end OCR pipeline for degraded historical Tamil manuscripts and multi-lingual inscriptions, achieving 95%+ Tamil and 98%+ English character accuracy.
+            </p>
+            <ul class="project-bullets">
+              <li>Engineered CRNN architecture combining convolutional feature extraction with bidirectional LSTM sequence modeling and CTC loss decoding.</li>
+              <li>Built computer vision preprocessing pipeline with adaptive Otsu thresholding, morphological noise removal, skew correction, and line/word slicing.</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Nike-Anand/tamil-text-recognition" target="_blank" rel="noopener noreferrer" class="xp-btn">
+                OCR Repository ↗
+              </a>
+              <span class="project-status">PyTorch Model</span>
+            </div>
+          </div>
+
+          <!-- Project 6: Semantic RAG & Vector Search -->
+          <div class="project-box" data-category="sde,ai">
             <div class="project-header">
               <img src="/react95_icons/directory_open_cool-0.png" class="project-icon" alt="" />
               <div>
@@ -231,6 +417,30 @@ const iconsData = [
                 RAG Engine Repo ↗
               </a>
               <span class="project-status">FastAPI Microservice</span>
+            </div>
+          </div>
+
+          <!-- Project 7: Chennai MTC Bus Route Finder -->
+          <div class="project-box" data-category="sde,ai">
+            <div class="project-header">
+              <img src="/react95_icons/computer_explorer_cool-0.png" class="project-icon" alt="" />
+              <div>
+                <h3 class="project-title">Chennai MTC Transit Bus Route Finder & Graph Optimizer</h3>
+                <div class="project-tech">Python • PyTorch • Transit Graph Algorithms • Route Pathfinding • Compact NLP</div>
+              </div>
+            </div>
+            <p class="project-desc">
+              Transit pathfinding engine that models Chennai MTC public bus networks as directed graphs to compute minimum-transfer and shortest-time commuter journeys.
+            </p>
+            <ul class="project-bullets">
+              <li>Scraped and modeled multi-modal MTC schedule and stop networks into graph adjacency structures.</li>
+              <li>Implemented Dijkstra / A* shortest path search algorithms and fine-tuned a lightweight NLP model for conversational destination queries.</li>
+            </ul>
+            <div class="project-footer">
+              <a href="https://github.com/Nike-Anand/-Bus_Route_Finder" target="_blank" rel="noopener noreferrer" class="xp-btn">
+                Transit Repo ↗
+              </a>
+              <span class="project-status">Graph Algorithms</span>
             </div>
           </div>
         </div>
@@ -407,8 +617,8 @@ const iconsData = [
     id: 'skills',
     title: 'Technical Skills & Architecture',
     icon: '/react95_icons/settings.png',
-    width: 680,
-    height: 500,
+    width: 720,
+    height: 520,
     content: `
       <div class="content-section">
         <div class="section-banner">
@@ -423,31 +633,35 @@ const iconsData = [
           <div class="skill-group-card">
             <div class="skill-group-title">
               <img src="/react95_icons/gears.png" alt="">
-              <span>Programming Languages</span>
+              <span>Languages & Core CS</span>
             </div>
             <div class="skill-chips">
-              <span class="skill-badge primary">Python <small>(FastAPI, AsyncIO, PyTorch)</small></span>
-              <span class="skill-badge primary">Java <small>(Enterprise, Factory/Strategy Patterns)</small></span>
-              <span class="skill-badge">C / C++ <small>(Systems & Cryptography)</small></span>
-              <span class="skill-badge">SQL <small>(Advanced CTEs, Windowing, Indexing)</small></span>
-              <span class="skill-badge">JavaScript / ES6+</span>
-              <span class="skill-badge">Haskell / Scala <small>(Functional Concepts)</small></span>
+              <span class="skill-badge primary">Python <small>(FastAPI, PyTorch)</small></span>
+              <span class="skill-badge primary">JavaScript / ES6+</span>
+              <span class="skill-badge primary">TypeScript</span>
+              <span class="skill-badge">Java <small>(Enterprise, OOP)</small></span>
+              <span class="skill-badge">C / C++ <small>(Systems, PQC)</small></span>
+              <span class="skill-badge primary">SQL <small>(PostgreSQL, MySQL, PL/SQL)</small></span>
+              <span class="skill-badge">Data Structures & Algorithms</span>
+              <span class="skill-badge">System Design & Cryptography</span>
             </div>
           </div>
 
           <!-- Category 2 -->
           <div class="skill-group-card">
             <div class="skill-group-title">
-              <img src="/react95_icons/computer_explorer_cool-0.png" alt="">
-              <span>Backend & Microservices</span>
+              <img src="/react95_icons/msie1.png" alt="">
+              <span>Frontend & Full-Stack</span>
             </div>
             <div class="skill-chips">
-              <span class="skill-badge primary">FastAPI</span>
-              <span class="skill-badge primary">RESTful API Architecture</span>
-              <span class="skill-badge">Microservices Decomposition</span>
-              <span class="skill-badge">gRPC & Protocol Buffers</span>
-              <span class="skill-badge">Asynchronous Task Queues (Celery/Redis)</span>
-              <span class="skill-badge">Telemetry & Structured Logging</span>
+              <span class="skill-badge primary">React</span>
+              <span class="skill-badge primary">Next.js</span>
+              <span class="skill-badge primary">Payload CMS</span>
+              <span class="skill-badge">Tailwind CSS</span>
+              <span class="skill-badge">HTML5 / Modern CSS3</span>
+              <span class="skill-badge">Responsive UI & Accessibility (WCAG)</span>
+              <span class="skill-badge">State Management & Client Hydration</span>
+              <span class="skill-badge">REST API Integration</span>
             </div>
           </div>
 
@@ -455,30 +669,35 @@ const iconsData = [
           <div class="skill-group-card">
             <div class="skill-group-title">
               <img src="/react95_icons/settings.png" alt="">
-              <span>Systems, Cloud & DevOps</span>
+              <span>Backend, Databases & DevOps</span>
             </div>
             <div class="skill-chips">
+              <span class="skill-badge primary">Node.js</span>
+              <span class="skill-badge primary">FastAPI & Flask</span>
               <span class="skill-badge primary">Docker Containerization</span>
-              <span class="skill-badge primary">Kubernetes Orchestration</span>
-              <span class="skill-badge">CI/CD Pipelines (GitHub Actions)</span>
-              <span class="skill-badge">Linux Administration & Shell Scripting</span>
-              <span class="skill-badge">AWS Core Services (EC2, S3, IAM)</span>
-              <span class="skill-badge">Fault Tolerance & Horizontal Scaling</span>
+              <span class="skill-badge">PostgreSQL & MySQL</span>
+              <span class="skill-badge">MongoDB</span>
+              <span class="skill-badge">CI/CD (GitHub Actions)</span>
+              <span class="skill-badge">Git & GitHub Workflow</span>
+              <span class="skill-badge">Postman & REST Verification</span>
+              <span class="skill-badge">Linux Administration & Shell</span>
             </div>
           </div>
 
           <!-- Category 4 -->
           <div class="skill-group-card">
             <div class="skill-group-title">
-              <img src="/react95_icons/directory_open_cool-0.png" alt="">
-              <span>Databases & Specialized Research</span>
+              <img src="/react95_icons/computer_explorer_cool-0.png" alt="">
+              <span>AI / ML & Specialized Research</span>
             </div>
             <div class="skill-chips">
-              <span class="skill-badge primary">PostgreSQL & MySQL</span>
-              <span class="skill-badge">Query Execution Plan Optimization</span>
+              <span class="skill-badge primary">PyTorch</span>
+              <span class="skill-badge primary">OpenCV & Computer Vision</span>
+              <span class="skill-badge primary">OCR (CRNN Architectures)</span>
+              <span class="skill-badge">Deep Learning & NLP</span>
+              <span class="skill-badge">Generative AI & Prompt Engineering</span>
               <span class="skill-badge primary">Post-Quantum Cryptography (CRYSTALS-Kyber)</span>
-              <span class="skill-badge">Distributed Inference & Model Quantization</span>
-              <span class="skill-badge">Multi-Agent Workflow Pipelines</span>
+              <span class="skill-badge">Multi-Agent Systems & RAG Pipelines</span>
             </div>
           </div>
         </div>
@@ -1231,6 +1450,7 @@ function closeStartMenu() {
 function handleStartAction(action) {
   switch (action) {
     case 'projects':
+    case 'recruiter':
     case 'resume':
     case 'about':
     case 'skills':
@@ -1263,15 +1483,16 @@ function setupRunDialog() {
     else if (cmd === 'about' || cmd === 'bio') openWindowById('about');
     else if (cmd === 'projects' || cmd === 'code') openWindowById('projects');
     else if (cmd === 'resume' || cmd === 'cv') openWindowById('resume');
+    else if (cmd === 'recruiter' || cmd === 'note' || cmd === 'dossier') openWindowById('recruiter');
     else if (cmd === 'skills' || cmd === 'tech') openWindowById('skills');
     else if (cmd === 'contact' || cmd === 'email') openWindowById('contact');
     else if (cmd === 'recycle' || cmd === 'trash') openWindowById('recycle');
     else if (cmd === 'github') window.open('https://github.com/Nike-Anand', '_blank');
     else if (cmd === 'linkedin') window.open('https://www.linkedin.com/in/nithiyanandam-s-6a0553232/', '_blank');
     else if (cmd === 'calc') alert('Calculator: 2 + 2 = 4 (Result verified)');
-    else if (cmd === 'notepad') openWindowById('resume');
+    else if (cmd === 'notepad') openWindowById('recruiter');
     else {
-      alert(`Windows cannot find '${cmd}'. Make sure you typed the name correctly, or try: projects, resume, skills, cmd, github.`);
+      alert(`Windows cannot find '${cmd}'. Make sure you typed the name correctly, or try: projects, resume, recruiter, skills, cmd, github.`);
     }
   };
 
@@ -1373,6 +1594,7 @@ function initCmdTerminal() {
           resp.innerHTML = `
 Available commands:
   <span style="color:#55ff55;">about</span>      - Display background and profile summary
+  <span style="color:#55ff55;">recruiter</span>  - Open Recruiter Cheat Sheet & dossier
   <span style="color:#55ff55;">projects</span>   - List technical projects & architectures
   <span style="color:#55ff55;">skills</span>     - Show technical skill stack
   <span style="color:#55ff55;">resume</span>     - Open resume in IE browser
@@ -1383,6 +1605,12 @@ Available commands:
   <span style="color:#55ff55;">date</span>       - Print current system date and time
   <span style="color:#55ff55;">exit</span>       - Close Command Prompt
           `;
+          break;
+        case 'recruiter':
+        case 'note':
+        case 'notepad':
+          resp.innerHTML = `Opening Recruiter Note & Candidate Dossier...`;
+          openWindowById('recruiter');
           break;
         case 'about':
           resp.innerHTML = `Nithiyanandam S - Backend Software Engineer | Distributed Systems & Microservices`;
@@ -1446,6 +1674,22 @@ function escapeHtml(str) {
 }
 
 // Helpers
+window.filterProjects = function(category, btn) {
+  const container = document.querySelector('.projects-container');
+  if (!container) return;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  const boxes = container.querySelectorAll('.project-box');
+  boxes.forEach(box => {
+    const cats = (box.getAttribute('data-category') || '').split(',');
+    if (category === 'all' || cats.includes(category)) {
+      box.style.display = 'block';
+    } else {
+      box.style.display = 'none';
+    }
+  });
+};
+
 window.copyToClipboard = function(text, btn) {
   navigator.clipboard.writeText(text).then(() => {
     const original = btn.innerText;
