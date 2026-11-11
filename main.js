@@ -892,25 +892,45 @@ let bootCompleted = false;
 document.addEventListener('DOMContentLoaded', () => {
   // Setup Boot Screen
   const bootScreen = document.getElementById('boot-screen');
+  const enterFullscreen = () => {
+    if (!document.fullscreenElement) {
+      const elem = document.documentElement;
+      if (elem.requestFullscreen) elem.requestFullscreen().catch(() => {});
+      else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+      else if (elem.msRequestFullscreen) elem.msRequestFullscreen();
+    }
+  };
+
+  const toggleFullscreen = () => {
+    if (!document.fullscreenElement) {
+      enterFullscreen();
+    } else {
+      if (document.exitFullscreen) document.exitFullscreen().catch(() => {});
+      else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+      else if (document.msExitFullscreen) document.msExitFullscreen();
+    }
+  };
+
   const dismissBoot = () => {
     if (bootCompleted) return;
     bootCompleted = true;
     bootScreen.style.opacity = '0';
     setTimeout(() => {
       bootScreen.classList.add('hidden');
-      // Auto open About Me window full screen so visitor has immediate full-page content!
+      // Auto open About Me window without covering the whole screen (matches user reference photo)
       if (!openWindows['about']) {
         openWindowById('about');
-        if (!openWindows['about'].maximized) {
-          toggleMaximizeWindow('about');
-        }
       }
     }, 400);
   };
 
-  // Skip on click or key
-  bootScreen.addEventListener('click', dismissBoot);
+  // Skip on click or key and request browser fullscreen
+  bootScreen.addEventListener('click', () => {
+    enterFullscreen();
+    dismissBoot();
+  });
   document.addEventListener('keydown', (e) => {
+    enterFullscreen();
     if (!bootCompleted) dismissBoot();
   }, { once: true });
 
@@ -985,6 +1005,15 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('show-desktop-btn').addEventListener('click', toggleShowDesktop);
   document.getElementById('ql-ie-btn').addEventListener('click', () => openWindowById('resume'));
   document.getElementById('ql-cmd-btn').addEventListener('click', () => openWindowById('cmd'));
+
+  // Tray Fullscreen Toggle
+  const trayFs = document.getElementById('tray-fullscreen');
+  if (trayFs) {
+    trayFs.addEventListener('click', (e) => {
+      e.stopPropagation();
+      toggleFullscreen();
+    });
+  }
 
   // Tray Volume
   document.getElementById('tray-volume').addEventListener('click', () => {
@@ -1130,12 +1159,21 @@ function openWindow(app) {
   // Initial sizing & positioning
   const screenW = window.innerWidth;
   const screenH = window.innerHeight;
-  const width = Math.min(app.width || 600, screenW - 20);
-  const height = Math.min(app.height || 420, screenH - 60);
+  let width = Math.min(app.width || 600, screenW - 20);
+  let height = Math.min(app.height || 420, screenH - 60);
 
   const offset = (Object.keys(openWindows).length % 6) * 28 + 40;
-  const left = Math.max(10, Math.min(screenW - width - 20, offset));
-  const top = Math.max(10, Math.min(screenH - height - 40, offset));
+  let left = Math.max(10, Math.min(screenW - width - 20, offset));
+  let top = Math.max(10, Math.min(screenH - height - 40, offset));
+
+  if (app.id === 'about') {
+    // Exactly matches the user's reference photo (media_1794388409679_c47f4fa9.jpg):
+    // Full desktop height from top to taskbar, positioned beside the desktop icons (~110px width)
+    top = 6;
+    height = Math.max(450, screenH - 36);
+    width = Math.min(620, Math.max(340, screenW - 140));
+    left = Math.max(120, Math.round((screenW - width) * 0.48));
+  }
 
   winEl.style.width = width + 'px';
   winEl.style.height = height + 'px';
@@ -1143,7 +1181,7 @@ function openWindow(app) {
   winEl.style.top = top + 'px';
   winEl.style.zIndex = ++zIndexCounter;
 
-  const isSmallScreen = screenW <= 768;
+  const isSmallScreen = screenW <= 520 && app.id !== 'about';
   if (isSmallScreen) {
     winEl.classList.add('maximized');
     const maxBtn = winEl.querySelector('.maximize');
