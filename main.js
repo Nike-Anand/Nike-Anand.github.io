@@ -937,6 +937,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // Auto dismiss after 1.5s
   setTimeout(dismissBoot, 1500);
 
+  // Setup Idle Project Tour Easter Egg
+  setupIdleProjectEasterEgg();
+
   // Setup Clock
   function updateClock() {
     const now = new Date();
@@ -1833,3 +1836,102 @@ window.restoreRecycleBin = function() {
     `;
   }
 };
+
+// System Tray XP Balloon Notification
+window.showXpBalloon = function(title, message) {
+  const existing = document.querySelector('.xp-balloon');
+  if (existing) existing.remove();
+
+  const balloon = document.createElement('div');
+  balloon.className = 'xp-balloon';
+  balloon.innerHTML = `
+    <div class="xp-balloon-header">
+      <span>ℹ️ ${title}</span>
+      <button class="xp-balloon-close" onclick="this.closest('.xp-balloon').remove()">✕</button>
+    </div>
+    <div>${message}</div>
+  `;
+  document.body.appendChild(balloon);
+
+  setTimeout(() => {
+    if (balloon.parentNode) balloon.remove();
+  }, 7500);
+};
+
+// Simulated CMD Auto-Typing "Virus/Hack" Tour Easter Egg
+let projectsAutoOpened = false;
+
+function setupIdleProjectEasterEgg() {
+  // If user actively opens projects, cancel auto-trigger
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-app-id="projects"]') || e.target.closest('button[onclick*="projects"]')) {
+      projectsAutoOpened = true;
+    }
+  });
+
+  // After 18s idle on initial boot without clicking projects:
+  setTimeout(() => {
+    if (projectsAutoOpened || openWindows['projects']) return;
+    projectsAutoOpened = true;
+
+    // 1. Open CMD window
+    openWindowById('cmd');
+    const cmdWin = openWindows['cmd'];
+    if (cmdWin) {
+      cmdWin.element.style.left = '40px';
+      cmdWin.element.style.top = '60px';
+      cmdWin.element.style.width = '560px';
+      cmdWin.element.style.height = '340px';
+      bringToFront('cmd');
+    }
+
+    const output = document.getElementById('cmd-output');
+    const input = document.getElementById('cmd-input');
+    if (!output || !input) return;
+
+    // Simulated terminal typing
+    const textToType = 'run_portfolio_tour.bat --launch-projects';
+    let charIdx = 0;
+    input.value = '';
+    input.focus();
+
+    const typeInterval = setInterval(() => {
+      if (charIdx < textToType.length) {
+        input.value += textToType[charIdx];
+        charIdx++;
+      } else {
+        clearInterval(typeInterval);
+        setTimeout(() => {
+          // Print typed command line
+          const echoLine = document.createElement('div');
+          echoLine.className = 'cmd-line-echo';
+          echoLine.innerHTML = `<span style="color:#aaa;">C:\\Users\\Nithiyanandam&gt;</span> ${textToType}`;
+          output.appendChild(echoLine);
+          input.value = '';
+
+          // Playful virus / hacker alert output
+          const alertLine = document.createElement('div');
+          alertLine.className = 'cmd-response';
+          alertLine.innerHTML = `
+<span style="color:#ff5555;">[ALERT] Visitor inactivity detected!</span>
+<span style="color:#ffff55;">[VIRUS SCAN] Inactivity neutralized: Deploying engineering projects...</span>
+<span style="color:#55ff55;">[SYSTEM] Executing: start C:\\Portfolio\\My_Projects.exe</span>
+          `;
+          output.appendChild(alertLine);
+
+          const term = output.closest('.cmd-terminal');
+          if (term) term.scrollTop = term.scrollHeight;
+
+          // Open My Projects window
+          setTimeout(() => {
+            openWindowById('projects');
+            showXpBalloon(
+              '🚀 Auto-Tour: Projects Launched',
+              'Inactivity detected: Automatically presenting Nithiyanandam\'s 7 featured engineering projects!'
+            );
+          }, 650);
+        }, 350);
+      }
+    }, 45);
+  }, 18000);
+}
