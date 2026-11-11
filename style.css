@@ -127,9 +127,10 @@ body, html {
   position: relative;
   width: 100%;
   height: calc(100% - 30px);
-  background-image: url('/bliss.png');
+  background-image: url('/bliss.jpg');
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
@@ -1301,6 +1302,40 @@ body, html {
 
 .xp-balloon-close:hover {
   color: #cc0000;
+}
+
+.xp-balloon-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.xp-balloon-btn {
+  padding: 4px 10px;
+  font-size: 11px;
+  font-family: Tahoma, 'Segoe UI', sans-serif;
+  border: 1px solid #7f9db9;
+  background: #ece9d8;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  color: #000;
+}
+
+.xp-balloon-btn:hover {
+  background: #e1ebfa;
+  border-color: #0053e5;
+}
+
+.xp-balloon-btn.primary {
+  background: #0053e5;
+  color: white;
+  border-color: #0a246a;
+  font-weight: bold;
+}
+
+.xp-balloon-btn.primary:hover {
+  background: #003db8;
 }
 
 @keyframes balloonPop {

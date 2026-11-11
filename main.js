@@ -1929,9 +1929,72 @@ function setupIdleProjectEasterEgg() {
               '🚀 Auto-Tour: Projects Launched',
               'Inactivity detected: Automatically presenting Nithiyanandam\'s 7 featured engineering projects!'
             );
+
+            // 5 seconds after projects open, ask politely: "Can I give my resume to you?"
+            setTimeout(() => {
+              promptResumeDownload();
+            }, 5500);
           }, 650);
         }, 350);
       }
     }, 45);
   }, 18000);
 }
+
+// Interactive Resume Prompt ("Can I give my resume to you?")
+window.promptResumeDownload = function() {
+  const existing = document.querySelector('.xp-balloon');
+  if (existing) existing.remove();
+
+  const balloon = document.createElement('div');
+  balloon.className = 'xp-balloon xp-balloon-prompt';
+  balloon.innerHTML = `
+    <div class="xp-balloon-header">
+      <span>📄 Recruiter Inquiry</span>
+      <button class="xp-balloon-close" onclick="handleResumeIgnore()">✕</button>
+    </div>
+    <div style="margin: 3px 0 6px 0; font-size: 11.5px; line-height: 1.4;">
+      <strong>Can I give my resume to you?</strong><br>
+      <span style="color: #444; font-size: 10.5px;">Download Nithiyanandam's 1-page Official PDF Resume (223 KB)</span>
+    </div>
+    <div class="xp-balloon-buttons">
+      <button class="xp-balloon-btn primary" onclick="handleResumeDownloadNow()">📥 Download Now</button>
+      <button class="xp-balloon-btn" onclick="handleResumeIgnore()">Ignore</button>
+    </div>
+  `;
+  document.body.appendChild(balloon);
+};
+
+window.handleResumeDownloadNow = function() {
+  const balloon = document.querySelector('.xp-balloon');
+  if (balloon) balloon.remove();
+
+  // Trigger download of official resume PDF
+  const link = document.createElement('a');
+  link.href = '/resume.pdf';
+  link.download = 'Nithiyanandam_S_Resume.pdf';
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+
+  // Show happy notification
+  setTimeout(() => {
+    showXpBalloon(
+      '🎉 Thank You! 😄',
+      'Resume downloaded successfully! Looking forward to connecting and discussing SDE & ML roles.'
+    );
+  }, 350);
+};
+
+window.handleResumeIgnore = function() {
+  const balloon = document.querySelector('.xp-balloon');
+  if (balloon) balloon.remove();
+
+  // Show playful sad emoji notification
+  setTimeout(() => {
+    showXpBalloon(
+      '😢 Oh okay...',
+      'No worries! Maybe next time. You can still view or download it anytime from the desktop icon or Start Menu! 📁'
+    );
+  }, 300);
+};
